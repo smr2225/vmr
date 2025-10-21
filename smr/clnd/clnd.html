@@ -1,0 +1,71 @@
+<!-- Календарь ВМР -->
+<div class="clnd-container">
+    
+    <!-- Эпиграф -->
+    <div class="constitution-quote clnd-epigraph">
+        <p data-i18n="clnd-epigraph-text"></p>
+        <cite data-i18n="clnd-epigraph-cite"></cite>
+    </div>
+
+    <h2 data-i18n="clnd-title"></h2>
+    <p class="clnd-epoch" data-i18n="clnd-epoch"></p>
+
+    <!-- Табы -->
+    <div class="clnd-tabs">
+        <button class="clnd-tab active" data-tab="description" data-i18n="clnd-tab-description"></button>
+        <button class="clnd-tab" data-tab="year0" data-i18n="clnd-tab-year0"></button>
+        <button class="clnd-tab" data-tab="year1" data-i18n="clnd-tab-year1"></button>
+    </div>
+
+    <div class="clnd-content">
+        
+        <!-- Описание - 4 колонки -->
+<div class="clnd-tab-content active" id="description">
+    <div class="four-columns">
+        <div class="column">
+            <h3 data-i18n="clnd-col1-title"></h3>
+            <p data-i18n="clnd-col1-text"></p>
+        </div>
+        <div class="column">
+            <h3 data-i18n="clnd-col2-title"></h3>
+            <p data-i18n="clnd-col2-text"></p>
+        </div>
+        <div class="column">
+            <h3 data-i18n="clnd-col3-title"></h3>
+            <p data-i18n="clnd-col3-text"></p>
+        </div>
+        <div class="column">
+            <h3 data-i18n="clnd-col4-title"></h3>
+            <p data-i18n="clnd-col4-text"></p>
+        </div>
+    </div>
+</div>
+
+<!-- Год 0 -->
+<div class="clnd-tab-content" id="year0">
+    <!-- Эпиграф для год0 -->
+    <div class="constitution-quote clnd-epigraph">
+        <p data-i18n="clnd-year0-epigraph-text"></p>
+        <cite data-i18n="clnd-year0-epigraph-cite"></cite>
+    </div>
+    
+    <h3 data-i18n="clnd-year0-title"></h3>
+    <p data-i18n="clnd-year0-info"></p>
+    <div id="calendar-year0" class="clnd-calendar"></div>
+</div>
+
+<!-- Год 1 -->
+<div class="clnd-tab-content" id="year1">
+    <!-- Эпиграф для год1 -->
+    <div class="constitution-quote clnd-epigraph">
+        <p data-i18n="clnd-year1-epigraph-text"></p>
+        <cite data-i18n="clnd-year1-epigraph-cite"></cite>
+    </div>
+    
+    <h3 data-i18n="clnd-year1-title"></h3>
+    <p data-i18n="clnd-year1-info"></p>
+    <div id="calendar-year1" class="clnd-calendar"></div>
+</div>
+
+    </div>
+</div>

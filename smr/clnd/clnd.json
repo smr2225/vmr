@@ -1,0 +1,142 @@
+{
+  "ru": {
+    "clnd-epigraph-text": "\"12.1. Общественный труд обязателен для гражданина, в неделю 5 рабочих дней по 4 часа, праздничные дни вычитаются из рабочих дней.\"",
+    "clnd-epigraph-cite": "ВМР, 00 год. Конституция. Статья 12. Труд.",
+    
+    "clnd-title": "Календарь Второй Марсианской Республики",
+    "clnd-epoch": "01.02.00 ВМР = 09.09.2225 земного календаря",
+    
+    "clnd-tab-description": "Описание",
+    "clnd-tab-year0": "Год 0 (669 дней)",
+    "clnd-tab-year1": "Год 1 (668 дней)",
+    
+    "clnd-col1-title": "Основные параметры",
+     "clnd-col1-text": "Начало календаря: 1 декабря 0 года ВМР (01.01.00) = 9 сентября 2225 земного. Длинные годы (669 дней): 0, 2, 4, 5, 7, 9 в десятилетии. Короткие годы (668 дней): 1, 3, 6, 8. Раз в 108 лет добавляется ещё один короткий год.",
+    
+    "clnd-col2-title": "Структура года",
+    "clnd-col2-text": "12 месяцев по 56 или 55 дней. В месяце 8 недель. Короткие месяцы (55 дней): Январь, Май, Ноябрь. В короткий год Август также становится коротким. Каждый месяц начинается с понедельника.",
+    
+    "clnd-col3-title": "Структура недели",
+    "clnd-col3-text": "7 или 6 дней: понедельник, вторник, среда, четверг, пятница, суббота, воскресенье. В коротком месяце последнее воскресенье пропускается.",
+    
+    "clnd-col4-title": "Марсианские сутки и праздники",
+    "clnd-col4-text": "24 часа, 60 минут, 61.6495 секунд в минуте. Служба точного времени корректирует последнюю минуту ежедневно. Праздники: 1 Января — Новый Год; 44 Марта — Равноденствие*; 14 Июля — Солнцестояние*; 24 Октября — Равноденствие*.",
+    
+    "clnd-year0-title": "Год 0 — Начальный год календаря ВМР",
+    "clnd-year0-info": "669 дней | Короткие месяцы: Январь, Май, Ноябрь",
+    "clnd-year0-epigraph-text": "\"14.8. Определенная в четах доля ОДС созданная в ходе ОНТ назначается гражданину в начале недели.\"",
+    "clnd-year0-epigraph-cite": "ВМР, 00 год. Конституция. Статья 14. Основанием экономических отношений.",
+    
+    "clnd-year1-epigraph-text": "\"18.4. Каждому гражданину в начале недели советом назначается 1 этос. Назначенные этосы принадлежат гражданину персонально и не могут быть переданы другому лицу.\"",
+    "clnd-year1-epigraph-cite": "ВМР, 00 год. Конституция. Статья 18. Этическая система.",
+ 
+    "clnd-year1-title": "Год 1 — Короткий год",
+    "clnd-year1-info": "668 дней | Короткие месяцы: Январь, Май, Август, Ноябрь"
+  },
+  
+  "en": {
+    "clnd-epigraph-text": "\"12.1. Public labor is mandatory for a citizen, 5 working days per week, 4 hours each, holidays are deducted from working days.\"",
+    "clnd-epigraph-cite": "SMR, year 00. Constitution. Article 12. Labor.",
+
+    "clnd-title": "Calendar of the Second Martian Republic",
+    "clnd-epoch": "01.02.00 SMR = 09.09.2225 Earth calendar",
+    
+    "clnd-tab-description": "Description",
+    "clnd-tab-year0": "Year 0 (669 days)",
+    "clnd-tab-year1": "Year 1 (668 days)",
+    
+    "clnd-col1-title": "Basic Parameters",
+    "clnd-col1-text": "Calendar start: December 1, year 0 SMR (01.01.00) = September 9, 2225 Earth. Long years (669 days): 0, 2, 4, 5, 7, 9 in decade. Short years (668 days): 1, 3, 6, 8. Every 108 years another short year is added.",
+    
+    "clnd-col2-title": "Year Structure",
+    "clnd-col2-text": "12 months of 56 or 55 days. 8 weeks per month. Short months (55 days): January, May, November. In short years August also becomes short. Each month begins on Monday.",
+    
+    "clnd-col3-title": "Week Structure",
+    "clnd-col3-text": "7 or 6 days: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday. In short months the last Sunday is skipped.",
+    
+    "clnd-col4-title": "Martian Day and Holidays",
+    "clnd-col4-text": "24 hours, 60 minutes, 61.6495 seconds per minute. Timekeeping Service adjusts last minute daily. Holidays: January 1 — New Year; March 44 — Equinox*; July 14 — Solstice*; October 24 — Equinox*.",
+    
+    "clnd-year0-title": "Year 0 — Initial Year of SMR Calendar",
+    "clnd-year0-info": "669 days | Short months: January, May, November",
+    "clnd-year0-epigraph-text": "\"14.8. The share of APS determined in chets created during MPL is assigned to citizen at week start.\"",
+    "clnd-year0-epigraph-cite": "SMR, year 00. Constitution. Article 14. Basis of Economic Relations.",
+    
+    "clnd-year1-epigraph-text": "\"18.4. Each citizen is assigned 1 ethos by the council at the beginning of the week. Assigned ethos belong to the citizen personally and cannot be transferred to another person.\"",
+    "clnd-year1-epigraph-cite": "SMR, year 00. Constitution. Article 18. Ethical System.",
+
+    "clnd-year1-title": "Year 1 — Short Year",
+    "clnd-year1-info": "668 days | Short months: January, May, August, November"
+  },
+  
+  "es": {
+    "clnd-epigraph-text": "\"12.1. El trabajo público es obligatorio para un ciudadano, 5 días laborables por semana, 4 horas cada uno, los días festivos se deducen de los días laborables.\"",
+    "clnd-epigraph-cite": "SRM, año 00. Constitución. Artículo 12. Trabajo.",
+
+    "clnd-title": "Calendario de la Segunda República Marciana",
+    "clnd-epoch": "01.02.00 SRM = 09.09.2225 calendario terrestre",
+    
+    "clnd-tab-description": "Descripción",
+    "clnd-tab-year0": "Año 0 (669 días)",
+    "clnd-tab-year1": "Año 1 (668 días)",
+    
+    "clnd-col1-title": "Parámetros Básicos",
+    "clnd-col1-text": "Inicio del calendario: 1 diciembre año 0 SRM (01.01.00) = 9 septiembre 2225 terrestre. Años largos (669 días): 0, 2, 4, 5, 7, 9 en década. Años cortos (668 días): 1, 3, 6, 8. Cada 108 años se agrega otro año corto.",
+    
+    "clnd-col2-title": "Estructura del Año",
+    "clnd-col2-text": "12 meses de 56 o 55 días. 8 semanas por mes. Meses cortos (55 días): Enero, Mayo, Noviembre. En años cortos Agosto también se vuelve corto. Cada mes comienza el lunes.",
+    
+    "clnd-col3-title": "Estructura de la Semana",
+    "clnd-col3-text": "7 o 6 días: lunes, martes, miércoles, jueves, viernes, sábado, domingo. En meses cortos se omite el último domingo.",
+    
+    "clnd-col4-title": "Día Marciano y Festivos",
+    "clnd-col4-text": "24 horas, 60 minutos, 61.6495 segundos por minuto. Servicio de Cronometraje ajusta último minuto diariamente. Festivos: 1 Enero — AñoNuevo; 44 Marzo — Equinoccio*; 14 Julio — Solsticio*; 24 Octubre — Equinoccio*.",
+    
+    "clnd-year0-title": "Año 0 — Año Inicial del Calendario SRM",
+    "clnd-year0-info": "669 días | Meses cortos: Enero, Mayo, Noviembre",
+    "clnd-year0-epigraph-text": "\"14.8. La porción de PPA determinada en chets creada durante TPO se asigna al ciudadano al inicio de semana.\"",
+    "clnd-year0-epigraph-cite": "SRM, año 00. Constitución. Artículo 14. Base de Relaciones Económicas.",
+    
+    "clnd-year1-epigraph-text": "\"18.4. A cada ciudadano se le asigna 1 ethos por el consejo al comienzo de la semana. Los ethos asignados pertenecen al ciudadano personalmente y no pueden transferirse a otra persona.\"",
+    "clnd-year1-epigraph-cite": "SRM, año 00. Constitución. Artículo 18. Sistema Ético.",
+    
+    "clnd-year1-title": "Año 1 — Año Corto",
+    "clnd-year1-info": "668 días | Meses cortos: Enero, Mayo, Agosto, Noviembre"
+    
+  },
+  
+  "fr": {
+    "clnd-epigraph-text": "\"12.1. Le travail public est obligatoire pour un citoyen, 5 jours ouvrables par semaine, 4 heures chacun, les jours fériés sont déduits des jours ouvrables.\"",
+    "clnd-epigraph-cite": "DRM, année 00. Constitution. Article 12. Travail.",
+
+    "clnd-title": "Calendrier de la Deuxième République Martienne",
+    "clnd-epoch": "01.02.00 DRM = 09.09.2225 calendrier terrestre",
+    
+    "clnd-tab-description": "Description",
+    "clnd-tab-year0": "Année 0 (669 jours)",
+    "clnd-tab-year1": "Année 1 (668 jours)",
+    
+    "clnd-col1-title": "Paramètres de Base",
+    "clnd-col1-text": "Début du calendrier: 1er décembre année 0 DRM (01.01.00) = 9 septembre 2225 terrestre. Années longues (669 jours): 0, 2, 4, 5, 7, 9 dans décennie. Années courtes (668 jours): 1, 3, 6, 8. Tous les 108 ans une autre année courte est ajoutée.",
+    
+    "clnd-col2-title": "Structure de l'Année",
+    "clnd-col2-text": "12 mois de 56 ou 55 jours. 8 semaines par mois. Mois courts (55 jours): Janvier, Mai, Novembre. Dans années courtes Août devient aussi court. Chaque mois commence le lundi.",
+    
+    "clnd-col3-title": "Structure de la Semaine",
+    "clnd-col3-text": "7 ou 6 jours: lundi, mardi, mercredi, jeudi, vendredi, samedi, dimanche. Dans mois courts le dernier dimanche est omis.",
+    
+    "clnd-col4-title": "Jour Martien et Fêtes",
+    "clnd-col4-text": "24 heures, 60 minutes, 61,6495 secondes par minute. Service de Chronométrage ajuste dernière minute quotidiennement. Fêtes: 1er Janvier — Nouvel An; 44 Mars — Équinoxe*; 14 Juillet — Solstice*; 24 Octobre — Équinoxe*.",
+    
+    "clnd-year0-title": "Année 0 — Année Initiale du Calendrier DRM",
+    "clnd-year0-info": "669 jours | Mois courts: Janvier, Mai, Novembre",
+    
+    "clnd-year1-title": "Année 1 — Année Courte",
+    "clnd-year1-info": "668 jours | Mois courts: Janvier, Mai, Août, Novembre",
+    "clnd-year0-epigraph-text": "\"14.8. La part de PPC déterminée en chets créée pendant TPO est attribuée au citoyen au début de semaine.\"",
+    "clnd-year0-epigraph-cite": "DRM, année 00. Constitution. Article 14. Base des Relations Économiques.",
+    
+    "clnd-year1-epigraph-text": "\"18.4. Chaque citoyen se voit attribuer 1 ethos par le conseil au début de la semaine. Les ethos attribués appartiennent au citoyen personnellement et ne peuvent être transférés à une autre personne.\"",
+    "clnd-year1-epigraph-cite": "DRM, année 00. Constitution. Article 18. Système Éthique."
+   }
+}

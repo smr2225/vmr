@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вторая Марсианская Республика 2225</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body data-theme="auto">
+    <!-- Шапка -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <h1 class="site-title" data-i18n="site-title">Вторая Марсианская Республика</h1>
+                <div class="header-controls">
+                    <div class="language-switcher">
+                        <button class="lang-btn active" data-lang="ru" title="Русский">RU</button>
+                        <button class="lang-btn" data-lang="en" title="English">EN</button>
+                        <button class="lang-btn" data-lang="es" title="Español">ES</button>
+                        <button class="lang-btn" data-lang="fr" title="Français">FR</button>
+                    </div>
+                    <button class="theme-toggle" title="Переключить день/ночь">
+                        <span class="sun">☀</span>
+                        <span class="moon">🌙</span>
+                    </button>
+                    <!-- Кнопка меню для мобильных -->
+                    <button class="menu-toggle" aria-label="Меню">☰</button>
+
+                    <!-- Затемнение фона -->
+                    <div class="menu-overlay"></div>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#rpbl" class="nav-link active" data-page="rpbl" data-i18n="nav-republic">Республика</a></li>
+                    <li><a href="#cnst" class="nav-link" data-page="cnst" data-i18n="nav-constitution">Конституция</a></li>
+                    <li><a href="#thry" class="nav-link" data-page="thry" data-i18n="nav-theory">Теория</a></li>
+                    <li><a href="#clnd" class="nav-link" data-page="clnd" data-i18n="nav-calendar">Календарь</a></li>
+                    <li><a href="#dscn" class="nav-link" data-page="dscn" data-i18n="nav-discussion">Обсуждение</a></li>
+                    <li><a href="#strs" class="nav-link" data-page="strs" data-i18n="nav-stories">Истории</a></li>
+                    <li><a href="#cntc" class="nav-link" data-page="cntc" data-i18n="nav-contacts">Контакты</a></li>
+                    <li><a href="#glsr" class="nav-link" data-page="glsr" data-i18n="nav-glossary">Глоссарий</a></li>
+                    <li><a href="#bout" class="nav-link" data-page="bout" data-i18n="nav-about">О сайте</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Контейнер для динамического контента -->
+    <main id="page-content" class="container">
+        <!-- Сюда загружается контент страниц -->
+        <div class="loading">Загрузка...</div>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <p data-i18n="footer-copyright">&copy; 2225 Вторая Марсианская Республика. Все права принадлежат гражданам.</p>
+            <p class="footer-note" data-i18n="footer-note">Сайт создан для информирования и просвещения</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

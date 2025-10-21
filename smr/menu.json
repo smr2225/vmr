@@ -1,0 +1,58 @@
+{
+  "ru": {
+    "site-title": "Вторая Марсианская Республика",
+    "nav-republic": "Республика",
+    "nav-constitution": "Конституция",
+    "nav-theory": "Теория",
+    "nav-calendar": "Календарь",
+    "nav-discussion": "Обсуждение",
+    "nav-stories": "Истории",
+    "nav-contacts": "Контакты",
+    "nav-glossary": "Глоссарий",
+    "nav-about": "О сайте",
+    "footer-copyright": "© 2225 Вторая Марсианская Республика. Все права принадлежат гражданам.",
+    "footer-note": "Сайт создан для информирования и просвещения"
+  },
+  "en": {
+    "site-title": "Second Martian Republic",
+    "nav-republic": "Republic",
+    "nav-constitution": "Constitution",
+    "nav-theory": "Theory",
+    "nav-calendar": "Calendar",
+    "nav-discussion": "Discussion",
+    "nav-stories": "Stories",
+    "nav-contacts": "Contacts",
+    "nav-glossary": "Glossary",
+    "nav-about": "About",
+    "footer-copyright": "© 2225 Second Martian Republic. All rights belong to the citizens.",
+    "footer-note": "Website created for information and education"
+  },
+  "es": {
+    "site-title": "Segunda República Marciana",
+    "nav-republic": "República",
+    "nav-constitution": "Constitución",
+    "nav-theory": "Teoría",
+    "nav-calendar": "Calendario",
+    "nav-discussion": "Discusión",
+    "nav-stories": "Historias",
+    "nav-contacts": "Contactos",
+    "nav-glossary": "Glosario",
+    "nav-about": "Acerca de",
+    "footer-copyright": "© 2225 Segunda República Marciana. Todos los derechos pertenecen a los ciudadanos.",
+    "footer-note": "Sitio web creado para información y educación"
+  },
+  "fr": {
+    "site-title": "Deuxième République Martienne",
+    "nav-republic": "République",
+    "nav-constitution": "Constitution",
+    "nav-theory": "Théorie",
+    "nav-calendar": "Calendrier",
+    "nav-discussion": "Discussion",
+    "nav-stories": "Histoires",
+    "nav-contacts": "Contacts",
+    "nav-glossary": "Glossaire",
+    "nav-about": "À propos",
+    "footer-copyright": "© 2225 Deuxième République Martienne. Tous les droits appartiennent aux citoyens.",
+    "footer-note": "Site créé pour l'information et l'éducation"
+  }
+}

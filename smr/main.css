@@ -1,0 +1,434 @@
+/* main.css - Только общее для всех страниц */
+
+/* Переменные */
+:root {
+    --mars-red: #cd5c5c;
+    --mars-orange: #ff6347;
+    --mars-brown: #8b4513;
+    --mars-dark: #2c1810;
+    --mars-light: #ffa07a;
+    
+    --day-bg-start: #ff8c42;
+    --day-bg-end: #ffd1a9;
+    --day-text: #2c1810;
+    --day-text-secondary: #5c3a2e;
+    
+    --night-bg-start: #1a0e0a;
+    --night-bg-end: #3d1f14;
+    --night-text: #ffa07a;
+    --night-text-secondary: #cd5c5c;
+    
+    --transition-speed: 0.4s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    transition: background var(--transition-speed) ease, color var(--transition-speed) ease;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Темы */
+body[data-theme="day"] {
+    background: linear-gradient(135deg, var(--day-bg-start), var(--day-bg-end));
+    color: var(--day-text);
+}
+
+body[data-theme="night"] {
+    background: linear-gradient(135deg, var(--night-bg-start), var(--night-bg-end));
+    color: var(--night-text);
+}
+
+body[data-theme="auto"] {
+    background: linear-gradient(135deg, var(--day-bg-start), var(--day-bg-end));
+    color: var(--day-text);
+}
+
+@media (prefers-color-scheme: dark) {
+    body[data-theme="auto"] {
+        background: linear-gradient(135deg, var(--night-bg-start), var(--night-bg-end));
+        color: var(--night-text);
+    }
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.site-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+}
+
+.header-controls {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Кнопки языков */
+.language-switcher {
+    display: flex;
+    gap: 8px;
+    padding: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+}
+
+.lang-btn {
+    padding: 10px 16px;
+    border: none;
+    background: linear-gradient(135deg, rgba(205, 92, 92, 0.3), rgba(255, 99, 71, 0.3));
+    color: inherit;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all var(--transition-speed) ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.lang-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: left 0.6s ease;
+}
+
+.lang-btn:hover::before {
+    left: 100%;
+}
+
+.lang-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 99, 71, 0.4);
+}
+
+.lang-btn.active {
+    background: linear-gradient(135deg, var(--mars-red), var(--mars-orange));
+    box-shadow: 0 4px 15px rgba(255, 99, 71, 0.5);
+    transform: scale(1.05);
+}
+
+/* Переключатель темы */
+.theme-toggle {
+    padding: 10px 16px;
+    border: none;
+    background: linear-gradient(135deg, rgba(205, 92, 92, 0.3), rgba(255, 99, 71, 0.3));
+    color: inherit;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    transition: all var(--transition-speed) ease;
+}
+
+.theme-toggle:hover {
+    transform: rotate(180deg) scale(1.1);
+    box-shadow: 0 6px 20px rgba(255, 99, 71, 0.4);
+}
+
+/* Навигация */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    display: block;
+    padding: 12px 20px;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all var(--transition-speed) ease;
+    position: relative;
+    overflow: hidden;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+nav a:hover::before {
+    left: 100%;
+}
+
+nav a:hover {
+    background: linear-gradient(135deg, rgba(205, 92, 92, 0.4), rgba(255, 99, 71, 0.4));
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 99, 71, 0.3);
+}
+
+nav a.active {
+    background: linear-gradient(135deg, var(--mars-red), var(--mars-orange));
+    box-shadow: 0 4px 15px rgba(255, 99, 71, 0.5);
+}
+
+/* Основной контент */
+main {
+    flex: 1;
+    padding: 40px 0;
+    position: relative;
+}
+
+/* Водяной знак */
+main::before {
+    content: 'DRAFT / ЧЕРНОВИК';
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    font-size: 5rem;
+    font-weight: 900;
+    opacity: 0.08;
+    pointer-events: none;
+    z-index: 1;
+    white-space: nowrap;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+}
+
+body[data-theme="night"] main::before {
+    opacity: 0.12;
+}
+
+@media (prefers-color-scheme: dark) {
+    body[data-theme="auto"] main::before {
+        opacity: 0.12;
+    }
+}
+
+/* Контент поверх водяного знака */
+#page-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Загрузка и ошибки */
+.loading {
+    text-align: center;
+    padding: 60px 20px;
+    font-size: 1.2rem;
+}
+
+.error-page {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.error-page h2 {
+    color: var(--mars-red);
+    margin-bottom: 20px;
+}
+
+.error-page a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: var(--mars-orange);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.error-page a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 99, 71, 0.4);
+}
+
+/* Подвал */
+footer {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.footer-note {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    margin-top: 10px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .site-title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    nav a {
+        text-align: center;
+    }
+    
+    .language-switcher {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .lang-btn {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+    }
+}
+@media (max-width: 768px) {
+    main {
+        padding-top: 20px; /* Отступ от липкого меню */
+    }
+}
+
+/* Шапка */
+header {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Фикс меню на мобильных */
+@media (max-width: 768px) {
+    header {
+        position: relative; /* Убираем sticky */
+    }
+    
+    /* Или если хочешь оставить sticky, добавь отступ: */
+    /* main {
+        margin-top: 20px;
+    } */
+}
+
+/* Выпадающее меню на узких экранах */
+/* Выпадающее меню на узких экранах */
+@media (max-width: 768px) {
+    nav {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 100vh;
+        background: rgba(20, 10, 5, 0.98); /* Темнее фон */
+        backdrop-filter: blur(10px);
+        padding: 60px 20px 20px;
+        transition: right 0.3s ease;
+        z-index: 2000;
+        overflow-y: auto;
+        box-shadow: -4px 0 20px rgba(0, 0, 0, 0.5); /* Тень слева */
+    }
+    
+    nav.open {
+        right: 0;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    nav a {
+        width: 100%;
+        text-align: left;
+        background: rgba(255, 255, 255, 0.15); /* Светлее фон пунктов */
+        color: #ffa07a; /* Яркий марсианский цвет текста */
+        font-weight: 600;
+    }
+    
+    nav a:hover,
+    nav a.active {
+        background: linear-gradient(135deg, var(--mars-red), var(--mars-orange));
+        color: white; /* Белый текст при hover/active */
+    }
+    
+    /* Кнопка открытия меню */
+   .menu-toggle {
+    display: block;
+    position: fixed;
+    top: 70px; /* Вместо 20px - на уровень переключателей */
+    right: 20px;
+    z-index: 3000;
+    background: linear-gradient(135deg, var(--mars-red), var(--mars-orange));
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 99, 71, 0.5);
+}
+    
+    /* Затемнение фона */
+    .menu-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7); /* Темнее затемнение */
+        z-index: 1500;
+    }
+    
+    .menu-overlay.active {
+        display: block;
+    }
+}
+/* На широких экранах кнопка скрыта */
+@media (min-width: 769px) {
+    .menu-toggle {
+        display: none;
+    }
+}
