@@ -98,7 +98,7 @@ function cleanupPageStyles() {
 
 async function loadPageCSS(page) {
     try {
-        const response = await fetch(`${page}/${page}.css`);
+        const response = await fetch(`/${page}/${page}.css`);
         if (response.ok) {
             const css = await response.text();
             const style = document.createElement('style');
@@ -263,4 +263,5 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
 });
