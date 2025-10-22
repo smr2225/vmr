@@ -114,7 +114,7 @@ async function loadPageCSS(page) {
 
 async function loadPageTranslations(page) {
     try {
-        const response = await fetch(`${page}/${page}.json`);
+        const response = await fetch(`/${page}/${page}.json`);
         if (response.ok) {
             const allTranslations = await response.json();
             pageTranslations = allTranslations[currentLang] || allTranslations.ru;
@@ -265,3 +265,4 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
