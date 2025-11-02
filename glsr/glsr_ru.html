@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <script>
+    document.documentElement.className = 
+      localStorage.getItem('theme') || 
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'night' : 'day');
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google" content="notranslate">
+  <title>Глоссарий</title>
+  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="glsr.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="header-content">
+      <div class="header-controls">
+        <div class="language-switcher">
+    <a href="/glsr/glsr_ru.html" class="lang-link active">RU</a>
+    <a href="/glsr/glsr_en.html" class="lang-link">EN</a>
+    <a href="/glsr/glsr_es.html" class="lang-link">ES</a>
+    <a href="/glsr/glsr_fr.html" class="lang-link">FR</a>
+        </div>
+        <button class="theme-toggle" id="themeToggle" title="Toggle theme">🌓</button>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+      </div>
+    </div>
+    <nav>
+      <ul>
+<li><a href="/rpbl/rpbl_ru.html">Республика</a></li>
+        <li><a href="/cnst/cnst_ru.html">Конституция</a></li>
+        <li><a href="/thry/thry_ru.html">Теория</a></li>
+        <li><a href="/clnd/clnd_ru.html">Календарь</a></li>
+        <li><a href="/dscn/dscn_ru.html">Обсуждение</a></li>
+        <li><a href="/strs/strs_ru.html">Истории</a></li>
+        <li><a href="/cntc/cntc_ru.html">Контакты</a></li>
+        <li><a href="/glsr/glsr_ru.html">Глоссарий</a></li>
+        <li><a href="/bout/bout_ru.html">О сайте</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h2 class="page-title">Глоссарий</h2>
+  <div class="glossary-content"><h3>Базовые понятия</h3>
+<p><strong>ВМР (Вторая Марсианская Республика)</strong> — конституционный союз объединений граждан через советы.</p>
+<p><strong>Гражданин</strong> — основание государства, первичный субъект и источник власти.</p>
+<p><strong>Совет</strong> — представительный орган власти, формируемый делегированием голосов.</p>
+<p><strong>Делегат</strong> — представитель совета, использующий делегированные голоса при принятии решений.</p>
+
+<h3>Экономические термины</h3>
+<p><strong>ОНТ (Общественно необходимый труд)</strong> — обязательный труд 20 часов в неделю на общественной собственности.</p>
+<p><strong>ОНС (Общественно необходимая собственность)</strong> — продукт ОНТ, распределяемый по установленным нормам.</p>
+<p><strong>ОДС (Общественная дополнительная собственность)</strong> — избыточный продукт ОНТ, распределяемый через хаб развития.</p>
+<p><strong>Чет</strong> — единица учета доли в ОДС, эквивалент часа простого труда.</p>
+<p><strong>Стичка</strong> — 1/100 чета.</p>
+<p><strong>КТУ (Коэффициент трудового участия)</strong> — корректирующий множитель (обычно 1 ± 0,3), определяемый коллективом.</p>
+<p><strong>Распределительный хаб ОДС</strong> — платформа свободного выбора дополнительных благ согласно доле гражданина.</p>
+
+<h3>Формы собственности</h3>
+<p><strong>Личная собственность</strong> — владения для личных потребностей.</p>
+<p><strong>Частная собственность</strong> — владения для производства благ роскоши.</p>
+<p><strong>Советская собственность</strong> — общественная собственность во владении советов.</p>
+<p><strong>Коллективная собственность</strong> — объединение собственностей для общих целей.</p>
+
+<h3>Административное деление</h3>
+<div class="admin-hierarchy">Очаг → Узел → Сектор → Комплекс → Кластер → Конгломерат → Гроздь (Союз)<br><span class="admin-enclave">Анклав</span></div></div>
+</main>
+
+<footer>
+  <div class="container">
+    <p>©  Вторая Марсианская Республика. 2225. Все права принадлежат гражданам.</p>
+    <p>Сайт создан для информирования и просвещения</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('themeToggle')?.addEventListener('click', () => {
+    const html = document.documentElement;
+    const newTheme = html.className === 'day' ? 'night' : 'day';
+    html.className = newTheme;
+    localStorage.setItem('theme', newTheme);
+  });
+
+  document.getElementById('menuToggle')?.addEventListener('click', () => {
+    document.querySelector('nav ul')?.classList.toggle('show');
+  });
+</script>
+</body>
+</html>

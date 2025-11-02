@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script>
+    document.documentElement.className = 
+      localStorage.getItem('theme') || 
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'night' : 'day');
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google" content="notranslate">
+  <title>Glossary</title>
+  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="glsr.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="header-content">
+      <div class="header-controls">
+        <div class="language-switcher">
+    <a href="/glsr/glsr_ru.html" class="lang-link">RU</a>
+    <a href="/glsr/glsr_en.html" class="lang-link active">EN</a>
+    <a href="/glsr/glsr_es.html" class="lang-link">ES</a>
+    <a href="/glsr/glsr_fr.html" class="lang-link">FR</a>
+        </div>
+        <button class="theme-toggle" id="themeToggle" title="Toggle theme">🌓</button>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+      </div>
+    </div>
+    <nav>
+      <ul>
+<li><a href="/rpbl/rpbl_en.html">Republic</a></li>
+        <li><a href="/cnst/cnst_en.html">Constitution</a></li>
+        <li><a href="/thry/thry_en.html">Theory</a></li>
+        <li><a href="/clnd/clnd_en.html">Calendar</a></li>
+        <li><a href="/dscn/dscn_en.html">Discussion</a></li>
+        <li><a href="/strs/strs_en.html">Stories</a></li>
+        <li><a href="/cntc/cntc_en.html">Contacts</a></li>
+        <li><a href="/glsr/glsr_en.html">Glossary</a></li>
+        <li><a href="/bout/bout_en.html">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h2 class="page-title">Glossary</h2>
+  <div class="glossary-content"><h3>Basic Concepts</h3>
+<p><strong>SMR (Second Martian Republic)</strong> — constitutional union of citizens' associations through councils.</p>
+<p><strong>Citizen</strong> — foundation of the state, its primary subject and source of power.</p>
+<p><strong>Council</strong> — representative body of power, formed by delegation of votes.</p>
+<p><strong>Delegate</strong> — representative of the council, using delegated votes in decision-making.</p>
+
+<h3>Economic Terms</h3>
+<p><strong>SNL (Socially Necessary Labor)</strong> — mandatory labor of 20 hours per week on public property.</p>
+<p><strong>SNP (Socially Necessary Property)</strong> — product of SNL, distributed according to established norms.</p>
+<p><strong>ASP (Additional Social Property)</strong> — surplus product of SNL, distributed through the development hub.</p>
+<p><strong>Chet</strong> — unit of account for share in ASP, equivalent to an hour of simple labor.</p>
+<p><strong>Stichka</strong> — 1/100 of a chet.</p>
+<p><strong>LPC (Labor Participation Coefficient)</strong> — corrective multiplier (typically 1 ± 0.3), determined by the collective.</p>
+<p><strong>ASP Distribution Hub</strong> — platform for free choice of additional goods according to citizen's share.</p>
+
+<h3>Forms of Property</h3>
+<p><strong>Personal Property</strong> — possessions for personal needs.</p>
+<p><strong>Private Property</strong> — possessions for production of luxury goods.</p>
+<p><strong>Council Property</strong> — public property owned by councils.</p>
+<p><strong>Collective Property</strong> — pooling of participants' property for common goals.</p>
+
+<h3>Administrative Division</h3>
+<div class="admin-hierarchy">Hearth → Node → Sector → Complex → Cluster → Conglomerate → Bunch (Union)<br><span class="admin-enclave">Enclave</span></div></div>
+</main>
+
+<footer>
+  <div class="container">
+    <p>©  Second Martian Republic. 2225. All rights belong to the citizens.</p>
+    <p>Website created for information and education</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('themeToggle')?.addEventListener('click', () => {
+    const html = document.documentElement;
+    const newTheme = html.className === 'day' ? 'night' : 'day';
+    html.className = newTheme;
+    localStorage.setItem('theme', newTheme);
+  });
+
+  document.getElementById('menuToggle')?.addEventListener('click', () => {
+    document.querySelector('nav ul')?.classList.toggle('show');
+  });
+</script>
+</body>
+</html>

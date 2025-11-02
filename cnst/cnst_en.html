@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+    <script>
+    document.documentElement.className = 
+      localStorage.getItem('theme') || 
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'night' : 'day');
+  </script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google" content="notranslate">
+  <title>Constitution of the Second Martian Republic — Марс. 2225. Вторая Республика</title>
+  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="cnst.css">
+  <script>
+    const theme = localStorage.getItem('theme') || 
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'night' : 'day');
+    document.documentElement.className = theme;
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="header-controls">
+          <div class="language-switcher">
+            <a href="/cnst/cnst_ru.html" class="lang-link ">RU</a>
+            <a href="/cnst/cnst_en.html" class="lang-link active">EN</a>
+            <a href="/cnst/cnst_es.html" class="lang-link ">ES</a>
+            <a href="/cnst/cnst_fr.html" class="lang-link ">FR</a>
+          </div>
+          <button class="theme-toggle" id="themeToggle" title="Toggle theme">🌓</button>
+          <button class="menu-toggle" id="menuToggle">☰</button>
+        </div>
+      </div>
+      <nav>
+        <ul>
+        <li><a href="/rpbl/rpbl_en.html">Republic</a></li>
+        <li><a href="/cnst/cnst_en.html">Constitution</a></li>
+        <li><a href="/thry/thry_en.html">Theory</a></li>
+        <li><a href="/clnd/clnd_en.html">Calendar</a></li>
+        <li><a href="/dscn/dscn_en.html">Discussion</a></li>
+        <li><a href="/strs/strs_en.html">Stories</a></li>
+        <li><a href="/cntc/cntc_en.html">Contacts</a></li>
+        <li><a href="/glsr/glsr_en.html">Glossary</a></li>
+        <li><a href="/bout/bout_en.html">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2 class="page-title">Constitution of the Second Martian Republic</h2>
+    <div class="text-block intro">The text was received via a temporary narrow noisy channel in Russian translation. Article headings and document structure have been fully restored due to repeated transmission. Subsections are significantly corrupted: some characters and phrases are irretrievably lost. Efforts are underway to restore the connection and reconstruct the full Constitution text.</div>
+
+    <div class="articles-grid">
+      <div class="article-card">Article 1. The Second Martian Republic is a constitutional union of citizen associations through councils, aimed at developing citizen freedom, understood as the multiplication of opportunities for harmonious citizen development, based on the expanded reproduction of society as the foundation for humanity's sustainable future as a spacefaring civilization.</div>
+<div class="article-card">Article 2. The citizen is the foundation of the Republic, its primary subject and source of power.</div>
+<div class="article-card">Article 3. The citizen is obliged to uphold the Constitution.</div>
+<div class="article-card">Article 4. The citizen has rights to: life support and social services; as well as personal and political rights, the exercise of which shall not infringe upon the rights and freedoms of others. These are ensured by executive bodies of the Republic through responsible citizens appointed by them.</div>
+<div class="article-card">Article 5. Citizen associations form the basis of the Republic’s governance structure.</div>
+<div class="article-card">Article 6. Citizen associations are represented in the state structure by their Councils.</div>
+<div class="article-card">Article 7. Councils in their direct work follow the principles of direct citizen self-governance.</div>
+<div class="article-card">Article 8. Councils constitute the supreme representative authority in the Republic. Councils are built starting from primary councils, with votes delegated to delegates in the next-level council, sequentially forming a pyramid of state-territorial councils up to the Supreme Council of the Republic, and for interest-based councils up to their highest councils.</div>
+<div class="article-card">Article 9. [corrupted]</div>
+<div class="article-card">Article 10. [corrupted]</div>
+<div class="article-card">Article 11. [corrupted]</div>
+<div class="article-card">Article 12. [corrupted]</div>
+<div class="article-card">Article 13. [corrupted]</div>
+<div class="article-card">Article 14. [corrupted]</div>
+<div class="article-card">Article 15. [corrupted]</div>
+<div class="article-card">Article 16. [corrupted]</div>
+<div class="article-card">Article 17. [corrupted]</div>
+<div class="article-card">Article 18. [corrupted]</div>
+<div class="article-card">Article 19. [corrupted]</div>
+<div class="article-card">Article 20. [corrupted]</div>
+<div class="article-card">Article 21. [corrupted]</div>
+<div class="article-card">Article 22. [corrupted]</div>
+<div class="article-card">Article 23. [corrupted]</div>
+<div class="article-card">Article 24. [corrupted]</div>
+<div class="article-card">Article 25. [corrupted]</div>
+<div class="article-card">Article 26. [corrupted]</div>
+    </div>
+
+    <div class="text-block conclusion">Archive of the Martian Republic. Signal lost. Re-transmission failed.</div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>©  Second Martian Republic. 2225 All rights belong to the citizens.</p>
+      <p>Website created for information and education</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('themeToggle')?.addEventListener('click', () => {
+      const html = document.documentElement;
+      const newTheme = html.className === 'day' ? 'night' : 'day';
+      html.className = newTheme;
+      localStorage.setItem('theme', newTheme);
+    });
+
+    document.getElementById('menuToggle')?.addEventListener('click', () => {
+      document.querySelector('nav ul')?.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

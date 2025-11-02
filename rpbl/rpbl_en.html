@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+    <script>
+    document.documentElement.className = 
+      localStorage.getItem('theme') || 
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'night' : 'day');
+  </script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google" content="notranslate">
+  <title>Mars. 2225. Second Republic.</title>
+  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="rpbl.css">
+
+<!-- <script>
+    // Применяем тему сразу — без белого фона
+    const theme = localStorage.getItem('theme') || 
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'night' : 'day');
+    document.documentElement.className = theme;
+  </script>
+ -->
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="header-controls">
+          <div class="language-switcher">
+            <a href="rpbl_ru.html" class="lang-link">RU</a>
+            <a href="rpbl_en.html" class="lang-link active">EN</a>
+            <a href="rpbl_es.html" class="lang-link">ES</a>
+            <a href="rpbl_fr.html" class="lang-link">FR</a>
+            
+          </div>
+          <button class="theme-toggle" id="themeToggle" title="Toggle theme">🌓</button>
+          <button class="menu-toggle" id="menuToggle">☰</button>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><strong>Republic</strong></li>
+          <li><a href="../cnst/cnst_en.html">Constitution</a></li>
+          <li><a href="../thry/thry_en.html">Theory</a></li>
+          <li><a href="../clnd/clnd_en.html">Calendar</a></li>
+          <li><a href="../dscn/dscn_en.html">Discussion</a></li>
+          <li><a href="../strs/strs_en.html">Stories</a></li>
+          <li><a href="../cntc/cntc_en.html">Contacts</a></li>
+          <li><a href="../glsr/glsr_en.html">Glossary</a></li>
+          <li><a href="../bout/bout_en.html">About</a></li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2 class="page-title">Mars. 2225. Second Republic.</h2>
+
+    <div class="text-block epigraph">
+      "Reason is a consequence of purposeful conscious activity for the expansion of life."<br>
+      SMR, 2225. Constitution. Article 25. Notes.
+    </div>
+
+    <div class="text-block intro">Life is expansion, and Mars was in our path. We moved here following the principle: if life does not expand, it perishes. Here, in subsurface spaces and orbital stations, we are building a Republic where culture is the foundation, Councils are the form of power, labor is the measure of reason, and economy is the means of development. This is the way.</div>
+
+    <div class="columns">
+      <div class="column">
+        <h3>Councils</h3>
+        <p>On Mars, decisions are made quickly and meaningfully — where the problem arises. Councils give every citizen not only the right to speak, but also the opportunity to turn their voice into action. Here, a voice matters not as a mark in statistics, but as part of a common search for a solution. This is how power is formed that responds to the rhythm of the environment itself. A citizen expresses an opinion in the primary council, where a decision is discussed and made; if necessary, it is transmitted upward through a delegate. The higher council considers the problem and returns the decision to the citizens. Here, the citizen's voice always belongs to the citizen and is transmitted by their delegate, under their control.</p>
+        <p>The ethical system makes this process even more refined and pleasant: you can share your assessment of any phenomenon — from the rise of Phobos to the taste of lunch or a new station project. Each assessment is a signal for a neighbor, for councils, for the entire society. This is how living feedback works, keeping us in a single rhythm.</p>
+      </div>
+      <div class="column">
+        <h3>Culture</h3>
+        <p>For us, labor is culture. Culture is mainly reproduced and improved by education: it transmits knowledge and skills, verifies capability, opens the path to professions. But for us, culture is also generated and constantly developed in the practice of life itself, in research, art, language, in our shared existence. It manifests in images, customs, sciences, arts, in how we design spaces, how we communicate and think. The Supreme Council approves its standards, local councils care for their observance, development, and diversity.</p>
+        <p>Earthlings divide culture into elite and mass, viewing it as a resource for enrichment and entertainment. For us, culture is what makes us a society, its breath and meaning.</p>
+      </div>
+      <div class="column">
+        <h3>Labor</h3>
+        <p>As soon as conscious, purposeful labor distinguished humans from the animal kingdom and allowed creating more product than required for life, conditions were created for socialist distribution of labor products for the benefit and development of society and individuals. But historically, for millennia, another principle prevailed — exploitation of man by man. We derived the formula for socialist expanded production and established a system of labor, evaluation, and distribution according to this formula, which allows naturally conducting socio-economic activity based on socialist principles and enjoying the main advantages of socialist production: freedom of labor choice, absence of exploitation, total planning.</p>
+      </div>
+      <div class="column">
+        <h3>Economy</h3>
+        <p>The SMR economy is a planned, highly developed, automated and robotized system of reproduction and development. We work for society four hours a day, and this is enough to provide everything necessary and more. Everything necessary is distributed through public mechanisms, and the additional — through APS (Additional Public Property). The share in APS depends on the quality of labor: training, talent, effort, intensity, necessity. Each labor is invested in the common good, and the contribution returns. Luxury, excess, is produced in a special capitalist circuit — yes, it exists, but does not control society, only serves ambitions. Thus, the economy becomes a tool for sustainability and expansion of society, mastering the Solar System, not a goal to earn money.</p>
+      </div>
+    </div>
+
+    <div class="text-block conclusion">The Second Martian Republic is practice. We left to survive. We stayed to live. We live to develop. We are waiting for you.</div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>©  Second Martian Republic. 2225 All rights belong to the citizens.</p>
+      <p>Website created for information and education</p>
+    </div>
+  </footer>
+
+  <script>
+    // Переключение темы
+    document.getElementById('themeToggle')?.addEventListener('click', () => {
+      const html = document.documentElement;
+      const newTheme = html.className === 'day' ? 'night' : 'day';
+      html.className = newTheme;
+      localStorage.setItem('theme', newTheme);
+    });
+
+    // Мобильное меню
+    document.getElementById('menuToggle')?.addEventListener('click', () => {
+      document.querySelector('nav ul')?.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

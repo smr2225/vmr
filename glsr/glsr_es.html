@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <script>
+    document.documentElement.className = 
+      localStorage.getItem('theme') || 
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'night' : 'day');
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google" content="notranslate">
+  <title>Glosario</title>
+  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="glsr.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="header-content">
+      <div class="header-controls">
+        <div class="language-switcher">
+    <a href="/glsr/glsr_ru.html" class="lang-link">RU</a>
+    <a href="/glsr/glsr_en.html" class="lang-link">EN</a>
+    <a href="/glsr/glsr_es.html" class="lang-link active">ES</a>
+    <a href="/glsr/glsr_fr.html" class="lang-link">FR</a>
+        </div>
+        <button class="theme-toggle" id="themeToggle" title="Toggle theme">🌓</button>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+      </div>
+    </div>
+    <nav>
+      <ul>
+<li><a href="/rpbl/rpbl_es.html">República</a></li>
+        <li><a href="/cnst/cnst_es.html">Constitución</a></li>
+        <li><a href="/thry/thry_es.html">Teoría</a></li>
+        <li><a href="/clnd/clnd_es.html">Calendario</a></li>
+        <li><a href="/dscn/dscn_es.html">Discusión</a></li>
+        <li><a href="/strs/strs_es.html">Historias</a></li>
+        <li><a href="/cntc/cntc_es.html">Contactos</a></li>
+        <li><a href="/glsr/glsr_es.html">Glosario</a></li>
+        <li><a href="/bout/bout_es.html">Acerca de</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h2 class="page-title">Glosario</h2>
+  <div class="glossary-content"><h3>Conceptos Básicos</h3>
+<p><strong>SMR (Segunda República Marciana)</strong> — unión constitucional de asociaciones de ciudadanos a través de consejos.</p>
+<p><strong>Ciudadano</strong> — fundamento del estado, su sujeto primario y fuente de poder.</p>
+<p><strong>Consejo</strong> — órgano representativo del poder, formado por delegación de votos.</p>
+<p><strong>Delegado</strong> — representante del consejo, que utiliza votos delegados en la toma de decisiones.</p>
+
+<h3>Términos Económicos</h3>
+<p><strong>TNS (Trabajo Necesario Social)</strong> — trabajo obligatorio de 20 horas por semana en propiedad pública.</p>
+<p><strong>PNS (Propiedad Necesaria Social)</strong> — producto del TNS, distribuido según normas establecidas.</p>
+<p><strong>PSA (Propiedad Social Adicional)</strong> — producto excedente del TNS, distribuido a través del centro de desarrollo.</p>
+<p><strong>Chet</strong> — unidad de cuenta para la participación en PSA, equivalente a una hora de trabajo simple.</p>
+<p><strong>Stichka</strong> — 1/100 de un chet.</p>
+<p><strong>CPL (Coeficiente de Participación Laboral)</strong> — multiplicador correctivo (típicamente 1 ± 0,3), determinado por el colectivo.</p>
+<p><strong>Centro de Distribución de PSA</strong> — plataforma de elección libre de bienes adicionales según la participación del ciudadano.</p>
+
+<h3>Formas de Propiedad</h3>
+<p><strong>Propiedad Personal</strong> — posesiones para necesidades personales.</p>
+<p><strong>Propiedad Privada</strong> — posesiones para producción de bienes de lujo.</p>
+<p><strong>Propiedad del Consejo</strong> — propiedad pública en posesión de consejos.</p>
+<p><strong>Propiedad Colectiva</strong> — agrupación de propiedades de participantes para objetivos comunes.</p>
+
+<h3>División Administrativa</h3>
+<div class="admin-hierarchy">Hogar → Nodo → Sector → Complejo → Clúster → Conglomerado → Racimo (Unión)<br><span class="admin-enclave">Enclave</span></div></div>
+</main>
+
+<footer>
+  <div class="container">
+    <p>©  Segunda República Marciana. 2225. Todos los derechos pertenecen a los ciudadanos.</p>
+    <p>Sitio web creado para información y educación</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('themeToggle')?.addEventListener('click', () => {
+    const html = document.documentElement;
+    const newTheme = html.className === 'day' ? 'night' : 'day';
+    html.className = newTheme;
+    localStorage.setItem('theme', newTheme);
+  });
+
+  document.getElementById('menuToggle')?.addEventListener('click', () => {
+    document.querySelector('nav ul')?.classList.toggle('show');
+  });
+</script>
+</body>
+</html>

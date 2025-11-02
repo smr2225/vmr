@@ -1,0 +1,69 @@
+/* cnst.css — только для страницы Конституции */
+main {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.page-title {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  margin-bottom: 1.5rem;
+  color: var(--mars-light);
+}
+
+html.day .page-title {
+  color: var(--day-text);
+}
+
+.intro,
+.conclusion {
+  max-width: 80ch;
+  margin: 2rem auto;
+  font-size: clamp(1.1rem, 2.8vw, 1.4rem);
+  padding: 1.2rem;
+  background: rgba(0,0,0,0.02);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+html.night .intro,
+html.night .conclusion {
+  background: rgba(255,255,255,0.02);
+}
+
+/* Сетка из 26 статей */
+.articles-grid {
+  display: grid;
+  gap: 2rem;
+  margin: 3rem auto;
+}
+
+/* Отказ от 1200px — используем 1100px */
+@media (min-width: 1100px) {
+  .articles-grid { grid-template-columns: repeat(4, 1fr); }
+}
+@media (min-width: 768px) and (max-width: 1099px) {
+  .articles-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 767px) {
+  .articles-grid { grid-template-columns: 1fr; }
+}
+
+.article-card {
+  padding: 1.4rem;
+  border-radius: 10px;
+  text-align: left;
+  background: rgba(0,0,0,0.03);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+  font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+  line-height: 1.5;
+}
+
+.article-card:hover {
+  transform: translateY(-2px);
+}
+
+html.night .article-card {
+  background: rgba(255,255,255,0.03);
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <script>
+    document.documentElement.className = 
+      localStorage.getItem('theme') || 
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'night' : 'day');
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google" content="notranslate">
+  <title>Théorie. Esprit</title>
+  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="../thry.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="header-content">
+      <div class="header-controls">
+        <div class="language-switcher">
+    <a href="/thry/mind/mind_ru.html" class="lang-link">RU</a>
+    <a href="/thry/mind/mind_en.html" class="lang-link">EN</a>
+    <a href="/thry/mind/mind_es.html" class="lang-link">ES</a>
+    <a href="/thry/mind/mind_fr.html" class="lang-link active">FR</a>
+        </div>
+        <button class="theme-toggle" id="themeToggle" title="Toggle theme">🌓</button>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+      </div>
+    </div>
+    <nav>
+      <ul>
+<li><a href="/rpbl/rpbl_fr.html">République</a></li>
+        <li><a href="/cnst/cnst_fr.html">Constitution</a></li>
+        <li><a href="/thry/thry_fr.html">Théorie</a></li>
+        <li><a href="/clnd/clnd_fr.html">Calendrier</a></li>
+        <li><a href="/dscn/dscn_fr.html">Discussion</a></li>
+        <li><a href="/strs/strs_fr.html">Histoires</a></li>
+        <li><a href="/cntc/cntc_fr.html">Contacts</a></li>
+        <li><a href="/glsr/glsr_fr.html">Glossaire</a></li>
+        <li><a href="/bout/bout_fr.html">À propos</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h2 class="page-title">Théorie. Esprit</h2>
+
+  <nav class="subnav">
+    <a href="/thry/thry_fr.html">Материя</a>
+    <a href="/thry/life/life_fr.html">Жизнь</a>
+    <a href="/thry/mind/mind_fr.html">Разум</a>
+  </nav>
+
+  <div class="theory-content"><p>Page en cours de développement.</p></div>
+</main>
+
+<footer>
+  <div class="container">
+    <p>©  Deuxième République Martienne. 2225. Tous les droits appartiennent aux citoyens.</p>
+    <p>Site créé pour l'information et l'éducation</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('themeToggle')?.addEventListener('click', () => {
+    const html = document.documentElement;
+    const newTheme = html.className === 'day' ? 'night' : 'day';
+    html.className = newTheme;
+    localStorage.setItem('theme', newTheme);
+  });
+
+  document.getElementById('menuToggle')?.addEventListener('click', () => {
+    document.querySelector('nav ul')?.classList.toggle('show');
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+    <script>
+    document.documentElement.className = 
+      localStorage.getItem('theme') || 
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'night' : 'day');
+  </script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google" content="notranslate">
+  <title>Marte. 2225. Segunda República.</title>
+  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="rpbl.css">
+
+<!--   <script>
+    // Применяем тему сразу — без белого фона
+    const theme = localStorage.getItem('theme') || 
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'night' : 'day');
+    document.documentElement.className = theme;
+  </script>
+   -->
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="header-controls">
+          <div class="language-switcher">
+            <a href="rpbl_ru.html" class="lang-link">RU</a>
+            <a href="rpbl_en.html" class="lang-link">EN</a>
+            <a href="rpbl_es.html" class="lang-link active">ES</a>
+            <a href="rpbl_fr.html" class="lang-link">FR</a>
+            
+          </div>
+          <button class="theme-toggle" id="themeToggle" title="Cambiar tema">🌓</button>
+          <button class="menu-toggle" id="menuToggle">☰</button>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><strong>República</strong></li>
+          <li><a href="../cnst/cnst_es.html">Constitución</a></li>
+          <li><a href="../thry/thry_es.html">Teoría</a></li>
+          <li><a href="../clnd/clnd_es.html">Calendario</a></li>
+          <li><a href="../dscn/dscn_es.html">Discusión</a></li>
+          <li><a href="../strs/strs_es.html">Historias</a></li>
+          <li><a href="../cntc/cntc_es.html">Contactos</a></li>
+          <li><a href="../glsr/glsr_es.html">Glosario</a></li>
+          <li><a href="../bout/bout_es.html">Acerca de</a></li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2 class="page-title">Marte. 2225. Segunda República.</h2>
+
+    <div class="text-block epigraph">
+      "La razón es consecuencia de la actividad consciente e intencionada para la expansión de la vida."<br>
+      RSM, 2225. Constitución. Artículo 25. Notas.
+    </div>
+
+    <div class="text-block intro">La vida es expansión, y Marte estaba en nuestro camino.</div>
+
+    <div class="columns">
+      <div class="column">
+        <h3>Consejos</h3>
+        <p>En Marte, las decisiones se toman rápida y significativamente.</p>
+        <p>El sistema ético hace este proceso aún más refinado.</p>
+      </div>
+      <div class="column">
+        <h3>Cultura</h3>
+        <p>Para nosotros, el trabajo es cultura.</p>
+        <p>Los terrestres dividen la cultura en élite y masiva.</p>
+      </div>
+      <div class="column">
+        <h3>Trabajo</h3>
+        <p>Tan pronto como el trabajo consciente e intencionado distinguió a los humanos.</p>
+      </div>
+      <div class="column">
+        <h3>Economía</h3>
+        <p>La economía de la RSM es planificada, altamente desarrollada.</p>
+      </div>
+    </div>
+
+    <div class="text-block conclusion">La Segunda República Marciana es práctica. Nos fuimos para sobrevivir. Nos quedamos para vivir. Vivimos para desarrollarnos. Te esperamos.</div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>©  Segunda República Marciana. 2225 Todos los derechos pertenecen a los ciudadanos.</p>
+      <p>Sitio web creado para información y educación</p>
+    </div>
+  </footer>
+
+  <script>
+    // Переключение темы
+    document.getElementById('themeToggle')?.addEventListener('click', () => {
+      const html = document.documentElement;
+      const newTheme = html.className === 'day' ? 'night' : 'day';
+      html.className = newTheme;
+      localStorage.setItem('theme', newTheme);
+    });
+
+    // Мобильное меню
+    document.getElementById('menuToggle')?.addEventListener('click', () => {
+      document.querySelector('nav ul')?.classList.toggle('show');
+    });
+  </script>
+</body>
+</html>

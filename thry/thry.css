@@ -1,0 +1,106 @@
+.subnav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2.2rem 0;
+  padding: 1rem;
+  background: rgba(44, 24, 16, 0.04);
+  border-radius: 16px;
+}
+
+html.night .subnav {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.subnav a {
+  display: inline-block;
+  padding: 0.75rem 1.6rem;
+  background: transparent;
+  color: var(--mars-orange);
+  text-decoration: none;
+  font-weight: 600;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  transition: background 0.2s ease;
+  white-space: nowrap;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+html.night .subnav a {
+  color: var(--night-text); /* светло-оранжевый ночью */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+/* Дневной hover: лёгкое затемнение фона */
+.subnav a:hover {
+  background: rgba(44, 24, 16, 0.12); /* ~20% чёрного на дневном фоне */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+/* Ночной hover: лёгкое осветление фона */
+html.night .subnav a:hover {
+  background: rgba(255, 255, 255, 0.12); /* ~20% белого на тёмном фоне */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.18);
+}
+
+/* .theory-content h3 {
+  font-size: 1.6rem;
+  margin: 2rem 0 1.2rem;
+  color: var(--mars-light);
+} */
+
+html.day .theory-content h3 {
+  color: var(--day-text);
+}
+
+/* .theory-content ol {
+  column-count: 4;
+  column-gap: 2rem;
+  padding-left: 0;
+  margin: 1.5rem 0;
+}
+
+.theory-content li {
+  break-inside: avoid;
+  margin-bottom: 0.8rem;
+  text-align: left;
+}
+
+.theory-content p {
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+  .theory-content ol { column-count: 3; }
+}
+@media (max-width: 900px) {
+  .theory-content ol { column-count: 2; }
+}
+@media (max-width: 600px) {
+  .theory-content ol { column-count: 1; }
+}
+ */
+
+
+ /* СТАЛО (для всего контента) */
+.theory-content {
+  column-count: 4;
+  column-gap: 2rem;
+  margin: 1.5rem 0;
+}
+
+@media (max-width: 1200px) { .theory-content { column-count: 3; } }
+@media (max-width: 900px)  { .theory-content { column-count: 2; } }
+@media (max-width: 600px)  { .theory-content { column-count: 1; } }
+
+/* Запрет разрыва абзацев и заголовков */
+.theory-content > * {
+  break-inside: avoid;
+  margin-bottom: 0.8rem;
+}

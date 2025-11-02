@@ -1,0 +1,58 @@
+/* strs.css */
+main {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.page-title {
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  margin-bottom: 2rem;
+  color: var(--mars-light);
+}
+
+html.day .page-title {
+  color: var(--day-text);
+}
+
+.story-title {
+  font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+  margin: 2rem 0 1.5rem;
+  color: var(--mars-orange);
+}
+
+html.day .story-title {
+  color: var(--mars-brown);
+}
+.epigraph {
+  width: 60%;
+  margin: 2rem auto 2rem auto;
+  margin-left: auto;     /* сдвиг вправо */
+  margin-right: 0;       /* убираем отступ справа */
+  padding: 1.2rem 0;
+  text-align: justify;
+  line-height: 1.6;
+  font-size: clamp(1.1rem, 2.8vw, 1.4rem);
+  color: var(--night-text-secondary);
+}
+
+html.day .epigraph {
+  color: var(--day-text-secondary);
+}
+
+.story-text {
+  max-width: 80ch;
+  margin: 1.8rem auto;
+  text-align: justify;
+  line-height: 1.7;
+  font-size: clamp(1.05rem, 2.6vw, 1.3rem);
+  hyphens: auto;
+}
+
+.story-text br {
+  display: block;
+  margin: 0;
+}
+
+.story-text br + br {
+  margin-top: 1em; /* скромный, но достаточный отступ */
+}

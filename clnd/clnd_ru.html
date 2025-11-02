@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <script>
+    document.documentElement.className = 
+      localStorage.getItem('theme') || 
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'night' : 'day');
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google" content="notranslate">
+  <title>Календарь Второй Марсианской Республики</title>
+  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="clnd.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="header-content">
+      <div class="header-controls">
+        <div class="language-switcher">
+    <a href="/clnd/clnd_ru.html" class="lang-link active">RU</a>
+    <a href="/clnd/clnd_en.html" class="lang-link">EN</a>
+    <a href="/clnd/clnd_es.html" class="lang-link">ES</a>
+    <a href="/clnd/clnd_fr.html" class="lang-link">FR</a>
+        </div>
+        <button class="theme-toggle" id="themeToggle" title="Toggle theme">🌓</button>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+      </div>
+    </div>
+    <nav>
+      <ul>
+<li><a href="/rpbl/rpbl_ru.html">Республика</a></li>
+        <li><a href="/cnst/cnst_ru.html">Конституция</a></li>
+        <li><a href="/thry/thry_ru.html">Теория</a></li>
+        <li><a href="/clnd/clnd_ru.html">Календарь</a></li>
+        <li><a href="/dscn/dscn_ru.html">Обсуждение</a></li>
+        <li><a href="/strs/strs_ru.html">Истории</a></li>
+        <li><a href="/cntc/cntc_ru.html">Контакты</a></li>
+        <li><a href="/glsr/glsr_ru.html">Глоссарий</a></li>
+        <li><a href="/bout/bout_ru.html">О сайте</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h2 class="page-title">Календарь Второй Марсианской Республики</h2>
+
+  <!-- Эпиграф — смещение на 40% от левого края -->
+  <div class="clnd-epigraph">
+    <p>"12.1. Общественный труд обязателен для гражданина, в неделю 5 рабочих дней по 4 часа, праздничные дни вычитаются из рабочих дней."</p>
+    <cite>ВМР, 00 год. Конституция. Статья 12. Труд.</cite>
+  </div>
+
+  <!-- Календарь -->
+  <div class="clnd-calendar-grid">
+    <div class="clnd-month">
+  <div class="clnd-month-header"><div class="clnd-month-name">Декабрь</div></div>
+  <div class="clnd-weekdays"><div>Пн</div><div>Вт</div><div>Ср</div><div>Чт</div><div>Пт</div><div>Сб</div><div>Вс</div></div>
+  <div class="clnd-days">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div class="weekend">6</div>
+    <div class="weekend">7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+    <div class="weekend">13</div>
+    <div class="weekend">14</div>
+    <div>15</div>
+    <div>16</div>
+    <div>17</div>
+    <div>18</div>
+    <div>19</div>
+    <div class="weekend">20</div>
+    <div class="weekend">21</div>
+    <div>22</div>
+    <div>23</div>
+    <div>24</div>
+    <div>25</div>
+    <div>26</div>
+    <div class="weekend">27</div>
+    <div class="weekend">28</div>
+    <div>29</div>
+    <div>30</div>
+    <div>31</div>
+    <div>32</div>
+    <div>33</div>
+    <div class="weekend">34</div>
+    <div class="weekend">35</div>
+    <div>36</div>
+    <div>37</div>
+    <div>38</div>
+    <div>39</div>
+    <div>40</div>
+    <div class="weekend">41</div>
+    <div class="weekend">42</div>
+    <div>43</div>
+    <div>44</div>
+    <div>45</div>
+    <div>46</div>
+    <div>47</div>
+    <div class="weekend">48</div>
+    <div class="weekend">49</div>
+    <div>50</div>
+    <div>51</div>
+    <div>52</div>
+    <div>53</div>
+    <div>54</div>
+    <div class="weekend">55</div>
+    <div class="weekend">56</div>
+  </div>
+</div>
+<div class="clnd-month">
+  <div class="clnd-month-header"><div class="clnd-month-name">Январь</div></div>
+  <div class="clnd-weekdays"><div>Пн</div><div>Вт</div><div>Ср</div><div>Чт</div><div>Пт</div><div>Сб</div><div>Вс</div></div>
+  <div class="clnd-days">
+    <div class="holiday">1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div class="weekend">6</div>
+    <div class="weekend">7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+    <div class="weekend">13</div>
+    <div class="weekend">14</div>
+    <div>15</div>
+    <div>16</div>
+    <div>17</div>
+    <div>18</div>
+    <div>19</div>
+    <div class="weekend">20</div>
+    <div class="weekend">21</div>
+    <div>22</div>
+    <div>23</div>
+    <div>24</div>
+    <div>25</div>
+    <div>26</div>
+    <div class="weekend">27</div>
+    <div class="weekend">28</div>
+    <div>29</div>
+    <div>30</div>
+    <div>31</div>
+    <div>32</div>
+    <div>33</div>
+    <div class="weekend">34</div>
+    <div class="weekend">35</div>
+    <div>36</div>
+    <div>37</div>
+    <div>38</div>
+    <div>39</div>
+    <div>40</div>
+    <div class="weekend">41</div>
+    <div class="weekend">42</div>
+    <div>43</div>
+    <div>44</div>
+    <div>45</div>
+    <div>46</div>
+    <div>47</div>
+    <div class="weekend">48</div>
+    <div class="weekend">49</div>
+    <div>50</div>
+    <div>51</div>
+    <div>52</div>
+    <div>53</div>
+    <div>54</div>
+    <div class="weekend">55</div>
+  </div>
+</div>
+<div class="clnd-month">
+  <div class="clnd-month-header"><div class="clnd-month-name">Февраль</div></div>
+  <div class="clnd-weekdays"><div>Пн</div><div>Вт</div><div>Ср</div><div>Чт</div><div>Пт</div><div>Сб</div><div>Вс</div></div>
+  <div class="clnd-days">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div class="weekend">6</div>
+    <div class="weekend">7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+    <div class="weekend">13</div>
+    <div class="weekend">14</div>
+    <div>15</div>
+    <div>16</div>
+    <div>17</div>
+    <div>18</div>
+    <div>19</div>
+    <div class="weekend">20</div>
+    <div class="weekend">21</div>
+    <div>22</div>
+    <div>23</div>
+    <div>24</div>
+    <div>25</div>
+    <div>26</div>
+    <div class="weekend">27</div>
+    <div class="weekend">28</div>
+    <div>29</div>
+    <div>30</div>
+    <div>31</div>
+    <div>32</div>
+    <div>33</div>
+    <div class="weekend">34</div>
+    <div class="weekend">35</div>
+    <div>36</div>
+    <div>37</div>
+    <div>38</div>
+    <div>39</div>
+    <div>40</div>
+    <div class="weekend">41</div>
+    <div class="weekend">42</div>
+    <div>43</div>
+    <div>44</div>
+    <div>45</div>
+    <div>46</div>
+    <div>47</div>
+    <div class="weekend">48</div>
+    <div class="weekend">49</div>
+    <div>50</div>
+    <div>51</div>
+    <div>52</div>
+    <div>53</div>
+    <div>54</div>
+    <div class="weekend">55</div>
+    <div class="weekend">56</div>
+  </div>
+</div>
+<div class="clnd-month">
+  <div class="clnd-month-header"><div class="clnd-month-name">Март</div></div>
+  <div class="clnd-weekdays"><div>Пн</div><div>Вт</div><div>Ср</div><div>Чт</div><div>Пт</div><div>Сб</div><div>Вс</div></div>
+  <div class="clnd-days">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div class="weekend">6</div>
+    <div class="weekend">7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+    <div class="weekend">13</div>
+    <div class="weekend">14</div>
+    <div>15</div>
+    <div>16</div>
+    <div>17</div>
+    <div>18</div>
+    <div>19</div>
+    <div class="weekend">20</div>
+    <div class="weekend">21</div>
+    <div>22</div>
+    <div>23</div>
+    <div>24</div>
+    <div>25</div>
+    <div>26</div>
+    <div class="weekend">27</div>
+    <div class="weekend">28</div>
+    <div>29</div>
+    <div>30</div>
+    <div>31</div>
+    <div>32</div>
+    <div>33</div>
+    <div class="weekend">34</div>
+    <div class="weekend">35</div>
+    <div>36</div>
+    <div>37</div>
+    <div>38</div>
+    <div>39</div>
+    <div>40</div>
+    <div class="weekend">41</div>
+    <div class="weekend">42</div>
+    <div>43</div>
+    <div class="holiday">44</div>
+    <div>45</div>
+    <div>46</div>
+    <div>47</div>
+    <div class="weekend">48</div>
+    <div class="weekend">49</div>
+    <div>50</div>
+    <div>51</div>
+    <div>52</div>
+    <div>53</div>
+    <div>54</div>
+    <div class="weekend">55</div>
+    <div class="weekend">56</div>
+  </div>
+</div>
+<div class="clnd-month">
+  <div class="clnd-month-header"><div class="clnd-month-name">Апрель</div></div>
+  <div class="clnd-weekdays"><div>Пн</div><div>Вт</div><div>Ср</div><div>Чт</div><div>Пт</div><div>Сб</div><div>Вс</div></div>
+  <div class="clnd-days">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div class="weekend">6</div>
+    <div class="weekend">7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+    <div class="weekend">13</div>
+    <div class="weekend">14</div>
+    <div>15</div>
+    <div>16</div>
+    <div>17</div>
+    <div>18</div>
+    <div>19</div>
+    <div class="weekend">20</div>
+    <div class="weekend">21</div>
+    <div>22</div>
+    <div>23</div>
+    <div>24</div>
+    <div>25</div>
+    <div>26</div>
+    <div class="weekend">27</div>
+    <div class="weekend">28</div>
+    <div>29</div>
+    <div>30</div>
+    <div>31</div>
+    <div>32</div>
+    <div>33</div>
+    <div class="weekend">34</div>
+    <div class="weekend">35</div>
+    <div>36</div>
+    <div>37</div>
+    <div>38</div>
+    <div>39</div>
+    <div>40</div>
+    <div class="weekend">41</div>
+    <div class="weekend">42</div>
+    <div>43</div>
+    <div>44</div>
+    <div>45</div>
+    <div>46</div>
+    <div>47</div>
+    <div class="weekend">48</div>
+    <div class="weekend">49</div>
+    <div>50</div>
+    <div>51</div>
+    <div>52</div>
+    <div>53</div>
+    <div>54</div>
+    <div class="weekend">55</div>
+    <div class="weekend">56</div>
+  </div>
+</div>
+<div class="clnd-month">
+  <div class="clnd-month-header"><div class="clnd-month-name">Май</div></div>
+  <div class="clnd-weekdays"><div>Пн</div><div>Вт</div><div>Ср</div><div>Чт</div><div>Пт</div><div>Сб</div><div>Вс</div></div>
+  <div class="clnd-days">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div class="weekend">6</div>
+    <div class="weekend">7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+    <div class="weekend">13</div>
+    <div class="weekend">14</div>
+    <div>15</div>
+    <div>16</div>
+    <div>17</div>
+    <div>18</div>
+    <div>19</div>
+    <div class="weekend">20</div>
+    <div class="weekend">21</div>
+    <div>22</div>
+    <div>23</div>
+    <div>24</div>
+    <div>25</div>
+    <div>26</div>
+    <div class="weekend">27</div>
+    <div class="weekend">28</div>
+    <div>29</div>
+    <div>30</div>
+    <div>31</div>
+    <div>32</div>
+    <div>33</div>
+    <div class="weekend">34</div>
+    <div class="weekend">35</div>
+    <div>36</div>
+    <div>37</div>
+    <div>38</div>
+    <div>39</div>
+    <div>40</div>
+    <div class="weekend">41</div>
+    <div class="weekend">42</div>
+    <div>43</div>
+    <div>44</div>
+    <div>45</div>
+    <div>46</div>
+    <div>47</div>
+    <div class="weekend">48</div>
+    <div class="weekend">49</div>
+    <div>50</div>
+    <div>51</div>
+    <div>52</div>
+    <div>53</div>
+    <div>54</div>
+    <div class="weekend">55</div>
+  </div>
+</div>
+<div class="clnd-month">
+  <div class="clnd-month-header"><div class="clnd-month-name">Июнь</div></div>
+  <div class="clnd-weekdays"><div>Пн</div><div>Вт</div><div>Ср</div><div>Чт</div><div>Пт</div><div>Сб</div><div>Вс</div></div>
+  <div class="clnd-days">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div class="weekend">6</div>
+    <div class="weekend">7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+    <div class="weekend">13</div>
+    <div class="weekend">14</div>
+    <div>15</div>
+    <div>16</div>
+    <div>17</div>
+    <div>18</div>
+    <div>19</div>
+    <div class="weekend">20</div>
+    <div class="weekend">21</div>
+    <div>22</div>
+    <div>23</div>
+    <div>24</div>
+    <div>25</div>
+    <div>26</div>
+    <div class="weekend">27</div>
+    <div class="weekend">28</div>
+    <div>29</div>
+    <div>30</div>
+    <div>31</div>
+    <div>32</div>
+    <div>33</div>
+    <div class="weekend">34</div>
+    <div class="weekend">35</div>
+    <div>36</div>
+    <div>37</div>
+    <div>38</div>
+    <div>39</div>
+    <div>40</div>
+    <div class="weekend">41</div>
+    <div class="weekend">42</div>
+    <div>43</div>
+    <div>44</div>
+    <div>45</div>
+    <div>46</div>
+    <div>47</div>
+    <div class="weekend">48</div>
+    <div class="weekend">49</div>
+    <div>50</div>
+    <div>51</div>
+    <div>52</div>
+    <div>53</div>
+    <div>54</div>
+    <div class="weekend">55</div>
+    <div class="weekend">56</div>
+  </div>
+</div>
+<div class="clnd-month">
+  <div class="clnd-month-header"><div class="clnd-month-name">Июль</div></div>
+  <div class="clnd-weekdays"><div>Пн</div><div>Вт</div><div>Ср</div><div>Чт</div><div>Пт</div><div>Сб</div><div>Вс</div></div>
+  <div class="clnd-days">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div class="weekend">6</div>
+    <div class="weekend">7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+    <div class="weekend">13</div>
+    <div class="weekend holiday">14</div>
+    <div>15</div>
+    <div>16</div>
+    <div>17</div>
+    <div>18</div>
+    <div>19</div>
+    <div class="weekend">20</div>
+    <div class="weekend">21</div>
+    <div>22</div>
+    <div>23</div>
+    <div>24</div>
+    <div>25</div>
+    <div>26</div>
+    <div class="weekend">27</div>
+    <div class="weekend">28</div>
+    <div>29</div>
+    <div>30</div>
+    <div>31</div>
+    <div>32</div>
+    <div>33</div>
+    <div class="weekend">34</div>
+    <div class="weekend">35</div>
+    <div>36</div>
+    <div>37</div>
+    <div>38</div>
+    <div>39</div>
+    <div>40</div>
+    <div class="weekend">41</div>
+    <div class="weekend">42</div>
+    <div>43</div>
+    <div>44</div>
+    <div>45</div>
+    <div>46</div>
+    <div>47</div>
+    <div class="weekend">48</div>
+    <div class="weekend">49</div>
+    <div>50</div>
+    <div>51</div>
+    <div>52</div>
+    <div>53</div>
+    <div>54</div>
+    <div class="weekend">55</div>
+    <div class="weekend">56</div>
+  </div>
+</div>
+<div class="clnd-month">
+  <div class="clnd-month-header"><div class="clnd-month-name">Август</div></div>
+  <div class="clnd-weekdays"><div>Пн</div><div>Вт</div><div>Ср</div><div>Чт</div><div>Пт</div><div>Сб</div><div>Вс</div></div>
+  <div class="clnd-days">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div class="weekend">6</div>
+    <div class="weekend">7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+    <div class="weekend">13</div>
+    <div class="weekend">14</div>
+    <div>15</div>
+    <div>16</div>
+    <div>17</div>
+    <div>18</div>
+    <div>19</div>
+    <div class="weekend">20</div>
+    <div class="weekend">21</div>
+    <div>22</div>
+    <div>23</div>
+    <div>24</div>
+    <div>25</div>
+    <div>26</div>
+    <div class="weekend">27</div>
+    <div class="weekend">28</div>
+    <div>29</div>
+    <div>30</div>
+    <div>31</div>
+    <div>32</div>
+    <div>33</div>
+    <div class="weekend">34</div>
+    <div class="weekend">35</div>
+    <div>36</div>
+    <div>37</div>
+    <div>38</div>
+    <div>39</div>
+    <div>40</div>
+    <div class="weekend">41</div>
+    <div class="weekend">42</div>
+    <div>43</div>
+    <div>44</div>
+    <div>45</div>
+    <div>46</div>
+    <div>47</div>
+    <div class="weekend">48</div>
+    <div class="weekend">49</div>
+    <div>50</div>
+    <div>51</div>
+    <div>52</div>
+    <div>53</div>
+    <div>54</div>
+    <div class="weekend">55</div>
+    <div class="weekend floating">56</div>
+  </div>
+</div>
+<div class="clnd-month">
+  <div class="clnd-month-header"><div class="clnd-month-name">Сентябрь</div></div>
+  <div class="clnd-weekdays"><div>Пн</div><div>Вт</div><div>Ср</div><div>Чт</div><div>Пт</div><div>Сб</div><div>Вс</div></div>
+  <div class="clnd-days">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div class="weekend">6</div>
+    <div class="weekend">7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+    <div class="weekend">13</div>
+    <div class="weekend">14</div>
+    <div>15</div>
+    <div>16</div>
+    <div>17</div>
+    <div>18</div>
+    <div>19</div>
+    <div class="weekend">20</div>
+    <div class="weekend">21</div>
+    <div>22</div>
+    <div>23</div>
+    <div>24</div>
+    <div>25</div>
+    <div>26</div>
+    <div class="weekend">27</div>
+    <div class="weekend">28</div>
+    <div>29</div>
+    <div>30</div>
+    <div>31</div>
+    <div>32</div>
+    <div>33</div>
+    <div class="weekend">34</div>
+    <div class="weekend">35</div>
+    <div>36</div>
+    <div>37</div>
+    <div>38</div>
+    <div>39</div>
+    <div>40</div>
+    <div class="weekend">41</div>
+    <div class="weekend">42</div>
+    <div>43</div>
+    <div>44</div>
+    <div>45</div>
+    <div>46</div>
+    <div>47</div>
+    <div class="weekend">48</div>
+    <div class="weekend">49</div>
+    <div>50</div>
+    <div>51</div>
+    <div>52</div>
+    <div>53</div>
+    <div>54</div>
+    <div class="weekend">55</div>
+    <div class="weekend">56</div>
+  </div>
+</div>
+<div class="clnd-month">
+  <div class="clnd-month-header"><div class="clnd-month-name">Октябрь</div></div>
+  <div class="clnd-weekdays"><div>Пн</div><div>Вт</div><div>Ср</div><div>Чт</div><div>Пт</div><div>Сб</div><div>Вс</div></div>
+  <div class="clnd-days">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div class="weekend">6</div>
+    <div class="weekend">7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+    <div class="weekend">13</div>
+    <div class="weekend">14</div>
+    <div>15</div>
+    <div>16</div>
+    <div>17</div>
+    <div>18</div>
+    <div>19</div>
+    <div class="weekend">20</div>
+    <div class="weekend">21</div>
+    <div>22</div>
+    <div>23</div>
+    <div class="holiday">24</div>
+    <div>25</div>
+    <div>26</div>
+    <div class="weekend">27</div>
+    <div class="weekend">28</div>
+    <div>29</div>
+    <div>30</div>
+    <div>31</div>
+    <div>32</div>
+    <div>33</div>
+    <div class="weekend">34</div>
+    <div class="weekend">35</div>
+    <div>36</div>
+    <div>37</div>
+    <div>38</div>
+    <div>39</div>
+    <div>40</div>
+    <div class="weekend">41</div>
+    <div class="weekend">42</div>
+    <div>43</div>
+    <div>44</div>
+    <div>45</div>
+    <div>46</div>
+    <div>47</div>
+    <div class="weekend">48</div>
+    <div class="weekend">49</div>
+    <div>50</div>
+    <div>51</div>
+    <div>52</div>
+    <div>53</div>
+    <div>54</div>
+    <div class="weekend">55</div>
+    <div class="weekend">56</div>
+  </div>
+</div>
+<div class="clnd-month">
+  <div class="clnd-month-header"><div class="clnd-month-name">Ноябрь</div></div>
+  <div class="clnd-weekdays"><div>Пн</div><div>Вт</div><div>Ср</div><div>Чт</div><div>Пт</div><div>Сб</div><div>Вс</div></div>
+  <div class="clnd-days">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div class="weekend">6</div>
+    <div class="weekend">7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+    <div>11</div>
+    <div>12</div>
+    <div class="weekend">13</div>
+    <div class="weekend">14</div>
+    <div>15</div>
+    <div>16</div>
+    <div>17</div>
+    <div>18</div>
+    <div>19</div>
+    <div class="weekend">20</div>
+    <div class="weekend">21</div>
+    <div>22</div>
+    <div>23</div>
+    <div>24</div>
+    <div>25</div>
+    <div>26</div>
+    <div class="weekend">27</div>
+    <div class="weekend">28</div>
+    <div>29</div>
+    <div>30</div>
+    <div>31</div>
+    <div>32</div>
+    <div>33</div>
+    <div class="weekend">34</div>
+    <div class="weekend">35</div>
+    <div>36</div>
+    <div>37</div>
+    <div>38</div>
+    <div>39</div>
+    <div>40</div>
+    <div class="weekend">41</div>
+    <div class="weekend">42</div>
+    <div>43</div>
+    <div>44</div>
+    <div>45</div>
+    <div>46</div>
+    <div>47</div>
+    <div class="weekend">48</div>
+    <div class="weekend">49</div>
+    <div>50</div>
+    <div>51</div>
+    <div>52</div>
+    <div>53</div>
+    <div>54</div>
+    <div class="weekend">55</div>
+  </div>
+</div>
+
+  </div>
+
+  <!-- Описание — с заголовками и эпохой -->
+  <div class="clnd-description">
+    <p class="clnd-epoch-inline">01.02.00 ВМР = 09.09.2225 земного календаря</p>
+    <h3>Описание</h3>
+    
+    <h4>Длинный год (669 дней)</h4>
+    <h5>Основные параметры</h5>
+    <p>Начало календаря: 1 декабря 0 года ВМР (01.01.00). Длинные годы (669 дней): 0, 2, 4, 5, 7, 9 в десятилетии. Короткие годы (668 дней): 1, 3, 6, 8. Раз в 108 лет добавляется ещё один короткий год.</p>
+    
+    <h5>Структура года</h5>
+    <p>12 месяцев по 56 или 55 дней. В месяце 8 недель. Короткие месяцы (55 дней): Январь, Май, Ноябрь. В короткий год Август также становится коротким. Каждый месяц начинается с понедельника.</p>
+    
+    <h4>Короткий  год (668 дней)</h4>
+    <h5>Структура недели</h5>
+    <p>7 или 6 дней: понедельник, вторник, среда, четверг, пятница, суббота, воскресенье. В коротком месяце последнее воскресенье пропускается.</p>
+    
+    <h5>Марсианские сутки и праздники</h5>
+    <p>24 часа, 60 минут, 61.6495 секунд в минуте. Служба точного времени корректирует последнюю минуту ежедневно. Праздники: 1 Января — Новый Год; 44 Марта — Равноденствие*; 14 Июля — Солнцестояние*; 24 Октября — Равноденствие*.</p>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <p>©  Вторая Марсианская Республика. 2225. Все права принадлежат гражданам.</p>
+    <p>Сайт создан для информирования и просвещения</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('themeToggle')?.addEventListener('click', () => {
+    const html = document.documentElement;
+    const newTheme = html.className === 'day' ? 'night' : 'day';
+    html.className = newTheme;
+    localStorage.setItem('theme', newTheme);
+  });
+
+  document.getElementById('menuToggle')?.addEventListener('click', () => {
+    document.querySelector('nav ul')?.classList.toggle('show');
+  });
+</script>
+</body>
+</html>

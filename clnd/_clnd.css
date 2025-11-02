@@ -1,0 +1,348 @@
+/* clnd.css - Календарь ВМР */
+
+.clnd-container > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Эпиграф с отступом */
+.clnd-epigraph {
+    margin-left: 50%;
+    padding-left: 20px;
+    border-left: 2px solid var(--mars-orange);
+}
+
+.clnd-epigraph p {
+    font-style: italic;
+}
+
+/* Заголовки */
+.clnd-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.clnd-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+body[data-theme="day"] .clnd-container h2,
+body[data-theme="day"] .clnd-container h3 {
+    color: #5c3a2e;
+}
+
+body[data-theme="night"] .clnd-container h2,
+body[data-theme="night"] .clnd-container h3 {
+    color: var(--mars-light);
+}
+
+@media (prefers-color-scheme: dark) {
+    body[data-theme="auto"] .clnd-container h2,
+    body[data-theme="auto"] .clnd-container h3 {
+        color: var(--mars-light);
+    }
+}
+
+/* Цитата */
+.constitution-quote {
+    background: rgba(0, 0, 0, 0.2);
+    border-left: 4px solid var(--mars-orange);
+    padding: 25px;
+    margin: 30px 0;
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+
+.constitution-quote p {
+    font-style: normal;
+    margin-bottom: 15px;
+}
+
+.constitution-quote cite {
+    display: block;
+    font-size: 0.9rem;
+    text-align: right;
+    font-style: normal;
+    opacity: 0.9;
+}
+
+/* Эпоха */
+.clnd-epoch {
+    text-align: center;
+    font-size: 1.1rem;
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+
+/* Табы */
+.clnd-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.clnd-tab {
+    padding: 12px 24px;
+    border: 2px solid rgba(205, 92, 92, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    color: inherit;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.clnd-tab:hover {
+    background: rgba(205, 92, 92, 0.2);
+    border-color: var(--mars-red);
+    transform: translateY(-2px);
+}
+
+.clnd-tab.active {
+    background: linear-gradient(135deg, var(--mars-red), var(--mars-orange));
+    border-color: var(--mars-orange);
+    color: white;
+    font-weight: 700;
+}
+
+/* Контент табов */
+.clnd-tab-content {
+    display: none;
+}
+
+.clnd-tab-content.active {
+    display: block;
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 4 колонки */
+.four-columns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    margin: 40px 0;
+}
+
+.column {
+    background: rgba(0, 0, 0, 0.15);
+    padding: 25px;
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+    transition: all 0.4s ease;
+}
+
+.column:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(255, 99, 71, 0.3);
+    background: rgba(0, 0, 0, 0.25);
+}
+
+.column h3 {
+    margin-bottom: 15px;
+}
+
+.column p {
+    line-height: 1.7;
+}
+
+/* Календарь - 4 квартала */
+.clnd-calendar {
+    margin: 30px 0;
+}
+
+.clnd-quarter {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+}
+
+/* Месяц */
+.clnd-month {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(205, 92, 92, 0.2);
+    border-radius: 8px;
+    padding: 12px;
+    transition: all 0.4s ease;
+}
+
+.clnd-month:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 99, 71, 0.2);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.clnd-month-header {
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid rgba(205, 92, 92, 0.3);
+}
+
+.clnd-month-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--mars-red);
+    margin-bottom: 3px;
+}
+
+.clnd-month-days-count {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.clnd-month-days-count.short {
+    color: var(--mars-orange);
+    font-weight: 600;
+}
+
+/* Дни недели */
+.clnd-weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+    margin-bottom: 4px;
+}
+
+.clnd-weekday {
+    text-align: center;
+    font-size: 0.65rem;
+    font-weight: 700;
+    padding: 3px 0;
+    opacity: 0.6;
+}
+
+.clnd-weekday.weekend {
+    color: var(--mars-red);
+    opacity: 0.8;
+}
+
+/* Сетка дней */
+.clnd-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2px;
+}
+
+.clnd-day {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 3px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.clnd-day:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: scale(1.08);
+}
+
+.clnd-day.weekend {
+    color: var(--mars-red);
+}
+
+/* Праздники */
+.clnd-day.holiday {
+    font-weight: 700;
+    color: #8b0000;
+    border: 2px solid rgba(139, 0, 0, 0.5);
+}
+
+.clnd-day.holiday-newyear {
+    background: #ffd93d;
+}
+
+.clnd-day.holiday-equinox {
+    background: #ff9800;
+}
+
+.clnd-day.holiday-solstice {
+    background: #64b5f6;
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+    .four-columns {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .clnd-quarter {
+        grid-template-columns: 1fr;
+    }
+    
+    .clnd-epigraph {
+        margin-left: 20%;
+    }
+}
+
+@media (max-width: 768px) {
+    .four-columns {
+        grid-template-columns: 1fr;
+    }
+    
+    .clnd-container h2 {
+        font-size: 1.8rem;
+    }
+    
+    .constitution-quote {
+        font-size: 1rem;
+        padding: 15px;
+    }
+    
+    .clnd-tabs {
+        flex-direction: column;
+    }
+    
+    .clnd-tab {
+        width: 100%;
+    }
+    
+    .clnd-epigraph {
+        margin-left: 0;
+        padding-left: 15px;
+    }
+}
+
+/* Эпиграф с отступом */
+.clnd-epigraph {
+    margin-left: 50%;
+    max-width: 50%;
+    padding-left: 20px;
+    border-left: 2px solid var(--mars-orange);
+}
+
+.clnd-epigraph p {
+    font-style: italic;
+    font-size: 1.1rem;
+}
+
+.clnd-epigraph cite {
+    font-size: 1.1rem; /* Увеличил до размера текста */
+    font-style: normal;
+}

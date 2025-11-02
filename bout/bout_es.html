@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <!-- ⚡️ ОБЯЗАТЕЛЬНО: установка темы ДО рендеринга -->
+  <script>
+    document.documentElement.className = 
+      localStorage.getItem('theme') || 
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'night' : 'day');
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google" content="notranslate">
+  <title>Acerca de</title>
+  <link rel="stylesheet" href="/main.css">
+  <!-- Подключаем локальный CSS, если есть (например, glsr.css) -->
+  
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="header-content">
+      <div class="header-controls">
+        <div class="language-switcher">
+    <a href="/bout/bout_ru.html" class="lang-link">RU</a>
+    <a href="/bout/bout_en.html" class="lang-link">EN</a>
+    <a href="/bout/bout_es.html" class="lang-link active">ES</a>
+    <a href="/bout/bout_fr.html" class="lang-link">FR</a>
+        </div>
+        <button class="theme-toggle" id="themeToggle" title="Toggle theme">🌓</button>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+      </div>
+    </div>
+    <nav>
+      <ul>
+<li><a href="/rpbl/rpbl_es.html">República</a></li>
+        <li><a href="/cnst/cnst_es.html">Constitución</a></li>
+        <li><a href="/thry/thry_es.html">Teoría</a></li>
+        <li><a href="/clnd/clnd_es.html">Calendario</a></li>
+        <li><a href="/dscn/dscn_es.html">Discusión</a></li>
+        <li><a href="/strs/strs_es.html">Historias</a></li>
+        <li><a href="/cntc/cntc_es.html">Contactos</a></li>
+        <li><a href="/glsr/glsr_es.html">Glosario</a></li>
+        <li><a href="/bout/bout_es.html">Acerca de</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h2 class="page-title">Acerca de</h2>
+  <div class="text-block">El texto fue recibido a través de un canal permanente, atemporal, estrecho en ruso debido a la configuración lingüística del canal. Los datos están fuertemente afectados por el ruido y fragmentados. Sin embargo, la recepción repetida y el procesamiento con IA arrojan un contenido provisional. Se están realizando intentos para estabilizar la recepción. Los nuevos bloques de datos decodificados se publicarán en el sitio.</div>
+</main>
+
+<footer>
+  <div class="container">
+    <p>©  Segunda República Marciana. 2225. Todos los derechos pertenecen a los ciudadanos.</p>
+    <p>Sitio web creado para información y educación</p>
+  </div>
+</footer>
+
+<!-- 🖱️ Обработчики — в конце -->
+<script>
+  document.getElementById('themeToggle')?.addEventListener('click', () => {
+    const html = document.documentElement;
+    const newTheme = html.className === 'day' ? 'night' : 'day';
+    html.className = newTheme;
+    localStorage.setItem('theme', newTheme);
+  });
+
+  document.getElementById('menuToggle')?.addEventListener('click', () => {
+    document.querySelector('nav ul')?.classList.toggle('show');
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <script>
+    document.documentElement.className = 
+      localStorage.getItem('theme') || 
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'night' : 'day');
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google" content="notranslate">
+  <title>Glossaire</title>
+  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="glsr.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="header-content">
+      <div class="header-controls">
+        <div class="language-switcher">
+    <a href="/glsr/glsr_ru.html" class="lang-link">RU</a>
+    <a href="/glsr/glsr_en.html" class="lang-link">EN</a>
+    <a href="/glsr/glsr_es.html" class="lang-link">ES</a>
+    <a href="/glsr/glsr_fr.html" class="lang-link active">FR</a>
+        </div>
+        <button class="theme-toggle" id="themeToggle" title="Toggle theme">🌓</button>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+      </div>
+    </div>
+    <nav>
+      <ul>
+<li><a href="/rpbl/rpbl_fr.html">République</a></li>
+        <li><a href="/cnst/cnst_fr.html">Constitution</a></li>
+        <li><a href="/thry/thry_fr.html">Théorie</a></li>
+        <li><a href="/clnd/clnd_fr.html">Calendrier</a></li>
+        <li><a href="/dscn/dscn_fr.html">Discussion</a></li>
+        <li><a href="/strs/strs_fr.html">Histoires</a></li>
+        <li><a href="/cntc/cntc_fr.html">Contacts</a></li>
+        <li><a href="/glsr/glsr_fr.html">Glossaire</a></li>
+        <li><a href="/bout/bout_fr.html">À propos</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h2 class="page-title">Glossaire</h2>
+  <div class="glossary-content"><h3>Concepts de Base</h3>
+<p><strong>DSM (Deuxième République Martienne)</strong> — union constitutionnelle d'associations de citoyens par le biais de conseils.</p>
+<p><strong>Citoyen</strong> — fondement de l'État, son sujet primaire et source de pouvoir.</p>
+<p><strong>Conseil</strong> — organe représentatif du pouvoir, formé par délégation de votes.</p>
+<p><strong>Délégué</strong> — représentant du conseil, utilisant les votes délégués dans la prise de décision.</p>
+
+<h3>Termes Économiques</h3>
+<p><strong>TNS (Travail Nécessaire Social)</strong> — travail obligatoire de 20 heures par semaine sur la propriété publique.</p>
+<p><strong>PNS (Propriété Nécessaire Sociale)</strong> — produit du TNS, distribué selon les normes établies.</p>
+<p><strong>PSA (Propriété Sociale Additionnelle)</strong> — produit excédentaire du TNS, distribué via le centre de développement.</p>
+<p><strong>Chet</strong> — unité de compte pour la part dans la PSA, équivalent à une heure de travail simple.</p>
+<p><strong>Stichka</strong> — 1/100 d'un chet.</p>
+<p><strong>CPT (Coefficient de Participation au Travail)</strong> — multiplicateur correctif (typiquement 1 ± 0,3), déterminé par le collectif.</p>
+<p><strong>Centre de Distribution de PSA</strong> — plateforme de choix libre de biens supplémentaires selon la part du citoyen.</p>
+
+<h3>Formes de Propriété</h3>
+<p><strong>Propriété Personnelle</strong> — possessions pour les besoins personnels.</p>
+<p><strong>Propriété Privée</strong> — possessions pour la production de biens de luxe.</p>
+<p><strong>Propriété du Conseil</strong> — propriété publique détenue par les conseils.</p>
+<p><strong>Propriété Collective</strong> — regroupement de propriétés des participants pour des objectifs communs.</p>
+
+<h3>Division Administrative</h3>
+<div class="admin-hierarchy">Foyer → Nœud → Secteur → Complexe → Grappe → Conglomérat → Bouquet (Union)<br><span class="admin-enclave">Enclave</span></div></div>
+</main>
+
+<footer>
+  <div class="container">
+    <p>©  Deuxième République Martienne. 2225. Tous les droits appartiennent aux citoyens.</p>
+    <p>Site créé pour l'information et l'éducation</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('themeToggle')?.addEventListener('click', () => {
+    const html = document.documentElement;
+    const newTheme = html.className === 'day' ? 'night' : 'day';
+    html.className = newTheme;
+    localStorage.setItem('theme', newTheme);
+  });
+
+  document.getElementById('menuToggle')?.addEventListener('click', () => {
+    document.querySelector('nav ul')?.classList.toggle('show');
+  });
+</script>
+</body>
+</html>

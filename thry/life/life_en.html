@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <script>
+    document.documentElement.className = 
+      localStorage.getItem('theme') || 
+      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'night' : 'day');
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google" content="notranslate">
+  <title>Theory. Life</title>
+  <link rel="stylesheet" href="/main.css">
+  <link rel="stylesheet" href="../thry.css">
+</head>
+<body>
+<header>
+  <div class="container">
+    <div class="header-content">
+      <div class="header-controls">
+        <div class="language-switcher">
+    <a href="/thry/life/life_ru.html" class="lang-link">RU</a>
+    <a href="/thry/life/life_en.html" class="lang-link active">EN</a>
+    <a href="/thry/life/life_es.html" class="lang-link">ES</a>
+    <a href="/thry/life/life_fr.html" class="lang-link">FR</a>
+        </div>
+        <button class="theme-toggle" id="themeToggle" title="Toggle theme">🌓</button>
+        <button class="menu-toggle" id="menuToggle">☰</button>
+      </div>
+    </div>
+    <nav>
+      <ul>
+<li><a href="/rpbl/rpbl_en.html">Republic</a></li>
+        <li><a href="/cnst/cnst_en.html">Constitution</a></li>
+        <li><a href="/thry/thry_en.html">Theory</a></li>
+        <li><a href="/clnd/clnd_en.html">Calendar</a></li>
+        <li><a href="/dscn/dscn_en.html">Discussion</a></li>
+        <li><a href="/strs/strs_en.html">Stories</a></li>
+        <li><a href="/cntc/cntc_en.html">Contacts</a></li>
+        <li><a href="/glsr/glsr_en.html">Glossary</a></li>
+        <li><a href="/bout/bout_en.html">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <h2 class="page-title">Theory. Life</h2>
+
+  <nav class="subnav">
+    <a href="/thry/thry_en.html">Материя</a>
+    <a href="/thry/life/life_en.html">Жизнь</a>
+    <a href="/thry/mind/mind_en.html">Разум</a>
+  </nav>
+
+  <div class="theory-content"><p>Page under development.</p></div>
+</main>
+
+<footer>
+  <div class="container">
+    <p>©  Second Martian Republic. 2225. All rights belong to the citizens.</p>
+    <p>Website created for information and education</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('themeToggle')?.addEventListener('click', () => {
+    const html = document.documentElement;
+    const newTheme = html.className === 'day' ? 'night' : 'day';
+    html.className = newTheme;
+    localStorage.setItem('theme', newTheme);
+  });
+
+  document.getElementById('menuToggle')?.addEventListener('click', () => {
+    document.querySelector('nav ul')?.classList.toggle('show');
+  });
+</script>
+</body>
+</html>
