@@ -10,5 +10,5 @@
 }
 
 html.night .text-block {
-  background: rgba(255, 255, 255, 0.04);
+  background: --day-text-secondary;
 }

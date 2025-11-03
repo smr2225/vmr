@@ -10,12 +10,10 @@
   --day-text: #2c1810;
   --day-text-secondary: #5c3a2e;
   --night-bg-start: #1a0e0a;
-  --night-bg-end: #3d1f14;
+  --night-bg-end:   #4a2518;   /* тёплый марсианский отсвет */
   --night-text: #ffa07a;
   --night-text-secondary: #cd5c5c;
 }
-
-
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -46,6 +44,17 @@ html.night body {
   /* animation: gradientShift 30s ease infinite; */
   color: var(--night-text);
 }
+
+html.night body a:link,
+html.night body a:visited {
+  color: var(--night-text-secondary);
+}
+
+html.night body a:hover,
+html.night body a:active {
+  color: var(--link-hover);
+}
+
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -106,6 +115,7 @@ html.night body::before {
 
 .container {
   width: 100%;
+    position: relative;
   padding-left: clamp(1rem, 5vw, 3rem);
   padding-right: clamp(1rem, 5vw, 3rem);
   margin: 0 auto;
@@ -294,8 +304,52 @@ html.day footer .container {
 }
 
 
-:root {
-  /* ... остальное без изменений ... */
-  --night-bg-start: #0d0704;   /* звёздная тьма */
-  --night-bg-end:   #4a2518;   /* тёплый марсианский отсвет */
+
+
+
+
+/* === Типографика: компактнее, но без ломки структуры === */
+
+html {
+  font-size: 15px; /* базовый размер для десктопа */
+}
+
+body {
+  font-size: 1rem;   /* = 15px */
+  line-height: 1.5;
+  /* убрал max-width отсюда! */
+  padding-inline: 1rem;
+}
+
+/* Ограничение ширины только для текстовых блоков */
+.article, .content, .text-block {
+  max-width: 70ch;
+  margin-inline: auto;
+}
+
+/* Обычный текст */
+p {
+  text-align: justify;
+  text-indent: 1.2em;
+  margin-block: 0.6rem;
+  hyphens: auto;
+}
+
+/* Заголовки */
+h1 { font-size: 1.6rem; margin-block: 1rem; }
+h2 { font-size: 1.3rem; margin-block: 0.8rem; }
+h3 { font-size: 1.1rem; margin-block: 0.6rem; }
+
+/* Подвал */
+footer .container {
+  font-size: 0.85rem;
+}
+
+/* Мобильные устройства */
+@media (max-width: 767px) {
+  html { font-size: 14px; }
+  body { padding-inline: 0.5rem; }
+  p { text-indent: 1em; }
+  h1 { font-size: 1.4rem; }
+  h2 { font-size: 1.2rem; }
 }
