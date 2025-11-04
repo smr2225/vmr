@@ -15,13 +15,15 @@
   --night-text-secondary: #cd5c5c;
 }
 
+/* Применяется ко всем элементам на странице. */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
+
+/* Подставил */
 .page-title {
-  text-align: center;
-  margin: 0 0 1.5rem 0;
-  font-size: 1.8rem;
-  line-height: 1.3;
+  font-size: clamp(1.3rem, 3vw, 1.8rem);
+  margin: 0 0 0.3rem 0;
+  color: var(--mars-light);
 }
 
 html.day body {
@@ -116,9 +118,15 @@ html.night body::before {
 .container {
   width: 100%;
     position: relative;
-  padding-left: clamp(1rem, 5vw, 3rem);
-  padding-right: clamp(1rem, 5vw, 3rem);
+  padding-left: clamp(1rem, 5vw, 1rem);
+  padding-right: clamp(1rem, 5vw, 1rem);
+  padding-bottom: clamp(0.2rem, 0.2vw, 0.2rem);
   margin: 0 auto;
+}
+
+header {
+  position: relative;
+  margin-bottom: 0;
 }
 
 /* ШАПКА — днём светлая! */
@@ -138,12 +146,13 @@ html.night header {
   display: flex;
   justify-content: flex-end; /* ← всё содержимое .header-content прижимается вправо */
   align-items: center;
-  min-height: 3rem;
+  /* min-height: 3rem; это по совету ИИ */
+  /* min-height убран — пусть контент определяет высоту */
 }
 
 .header-controls {
   display: flex;
-  gap: 0.6rem;
+  gap: clamp(0.3rem, 1vw, 0.6rem);
   align-items: center;
   /* НЕ нужно justify-content здесь — он уже в .header-content */
 }
@@ -205,7 +214,8 @@ nav ul {
   display: flex;
   list-style: none;
   gap: 1.5rem;
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
+  margin-top: clamp(0.2rem, 0.8vw, 0.5rem); /* ← ключевое уменьшение */
   justify-content: center;
   flex-wrap: wrap;
   font-size: 1.1rem; /* ← крупнее! */
@@ -323,7 +333,7 @@ body {
 
 /* Ограничение ширины только для текстовых блоков */
 .article, .content, .text-block {
-  max-width: 70ch;
+  max-width: 80ch;
   margin-inline: auto;
 }
 
@@ -331,13 +341,13 @@ body {
 p {
   text-align: justify;
   text-indent: 1.2em;
-  margin-block: 0.6rem;
+  margin-block: 0.3rem;
   hyphens: auto;
 }
 
 /* Заголовки */
 h1 { font-size: 1.6rem; margin-block: 1rem; }
-h2 { font-size: 1.3rem; margin-block: 0.8rem; }
+h2 { font-size: 1.3rem; margin-block: 0.6rem; }
 h3 { font-size: 1.1rem; margin-block: 0.6rem; }
 
 /* Подвал */
