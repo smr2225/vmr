@@ -23,7 +23,8 @@
 .page-title {
   font-size: clamp(1.3rem, 3vw, 1.8rem);
   margin: 0 0 0.3rem 0;
-  color: var(--mars-light);
+  color: var(--night-text-secondary);
+  text-align: center;
 }
 
 html.day body {
